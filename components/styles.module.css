@@ -1,0 +1,79 @@
+.head{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0!important;
+}
+.prose{
+    margin: 0!important;
+}
+.cardsWrapper{
+    margin-bottom: 20px!important;
+    border-radius: 10px;
+}
+.cardHead{
+    margin-top: 0;
+    line-height: 19px;
+    font-weight: 500!important;
+    display: inline-flex;
+    align-items: center;
+}
+.card{
+    /* margin-bottom: 15px!important; */
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-top: 0!important;
+}
+.cardProse{
+    margin-left: 0!important;
+    font-size: 15px;
+    line-height: 18px;
+}
+.icon{
+    margin-right: 5px;
+}
+.workCard p{
+    line-height: 19px;
+}
+.workCard img{
+    margin-bottom: 10px;
+}
+.form{
+    margin-left: 0!important;
+}
+.contactWrapper span{
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.mainLink{
+    font-size: 28px!important;
+    margin-top: 15px!important;
+    display: inline-flex;
+    align-items: center;
+}
+.mainLink svg{
+    margin-left: 5px;
+}
+.callHead{
+    font-size: 24px;
+    font-weight: 700;
+}
+.callLink{
+    font-size: 20px!important;
+    margin-top: 10px!important;
+    display: inline-flex;
+    align-items: center;
+}
+.callLink svg{
+    margin-left: 5px;
+}
+@media (max-width: 540px) {
+    .footLogo{
+        display: none!important;
+    }
+}
+@media (max-width: 1280px) {
+    .card{
+        margin-bottom: 10px!important;
+    }
+}
