@@ -1,4 +1,4 @@
-module.exports = {
+/* module.exports = {
   semi: false,
   singleQuote: true,
   printWidth: 100,
@@ -8,3 +8,4 @@ module.exports = {
   bracketSpacing: true,
   plugins: ['prettier-plugin-tailwindcss'],
 }
+ */
