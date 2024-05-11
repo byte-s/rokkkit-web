@@ -1,6 +1,5 @@
 'use client'
 
-import siteMetadata from '@/data/siteMetadata'
 import { useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'

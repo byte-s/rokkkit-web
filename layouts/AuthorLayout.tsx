@@ -1,9 +1,6 @@
 import { ReactNode } from 'react'
-import type { Authors } from '.contentlayer/generated'
 import ServiceIcon from '@/components/service-icons'
-import Image from '@/components/Image'
 import styles from '@/components/styles.module.css'
-import siteMetadata from '@/data/siteMetadata'
 import CallBlock from '@/components/CallBlock'
 
 interface Props {

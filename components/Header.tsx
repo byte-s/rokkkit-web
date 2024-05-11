@@ -1,11 +1,8 @@
-import siteMetadata from '@/data/siteMetadata'
-import Logo from '@/data/logo.svg'
 import headerNavLinks from '@/data/headerNavLinks'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
-import ContactButton from './ContactButton'
 import RokkitLogo from '@/data/logo'
 
 const Header = () => {

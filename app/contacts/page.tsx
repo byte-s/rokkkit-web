@@ -1,13 +1,9 @@
 
 import 'react-toastify/dist/ReactToastify.css';
-import { Authors, allAuthors } from '.contentlayer/generated'
-import { MDXLayoutRenderer } from 'pliny/mdx-components'
-import AuthorLayout from '@/layouts/AuthorLayout'
-import { coreContent } from 'pliny/utils/contentlayer'
 import { genPageMetadata } from 'app/seo'
 import styles from '@/components/styles.module.css'
 import React from 'react'
-import { toast, ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import Form from '@/components/Form';
 
 
