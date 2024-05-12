@@ -43,11 +43,11 @@ export default function Page() {
                     <h3 className={styles.head+` font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14`}>Наша почта</h3>
                     <a className={styles.prose} href="mailto:rokkitstudio@gmail.com">rokkitstudio@gmail.com</a>
                     <h3 className={styles.head+` font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14`}>Наши соц. сети</h3>
-                    <a className={styles.prose} href="http://">VK</a>
-                    <a className={styles.prose} href="http://">Telegram</a>
+                    <a className={styles.prose} href="https://t.me/rokkit4business">Telegram</a>
+                    <h3 className={styles.head+` font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14`}>Наш телефон</h3>
+                    <a className={styles.prose} href="tel:+79131430986">+7 913 143-09-86</a>
                     <h3 className={styles.head+` font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14`}>Наши контакты</h3>
                     <p className={styles.prose}>Российская Федерация, Омская область, <br /> г. Омск, ул. Фурманова, 7В</p>
-                    <p className={styles.prose}>+7 913 143-09-86</p>
                     <h3 className={styles.head+` font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14`}>Реквизиты</h3>
                     <p className={styles.prose}>ООО «РОККИТ»</p>
                     <span className={styles.prose}>Юридический адрес</span>

@@ -42,8 +42,11 @@
 }
 .contactWrapper span{
     padding: 5px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
+}
+.contactWrapper p{
+    font-size: 15px;
 }
 .mainLink{
     font-size: 28px!important;
@@ -67,6 +70,7 @@
 .callLink svg{
     margin-left: 5px;
 }
+
 @media (max-width: 540px) {
     .footLogo{
         display: none!important;
