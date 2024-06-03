@@ -76,6 +76,18 @@
         display: none!important;
     }
 }
+@media (max-width: 768px) {
+    .mainLink{
+        font-size: 20px!important;
+    }
+    .mainLink svg{
+        width: 21px;
+        height: 21px;
+    }
+    .body{
+        padding: 15px 25px!important;
+    }
+}
 @media (max-width: 1280px) {
     .card{
         margin-bottom: 10px!important;
