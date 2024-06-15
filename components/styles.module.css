@@ -70,7 +70,17 @@
 .callLink svg{
     margin-left: 5px;
 }
-
+.headerPopover{
+    max-width: 24rem!important;
+}
+.scrollNav{
+    overflow-y: auto;
+    padding-bottom: 3rem;
+    height: 90%;
+}
+.scrollNav::-webkit-scrollbar{
+    display:none;
+}
 @media (max-width: 540px) {
     .footLogo{
         display: none!important;
