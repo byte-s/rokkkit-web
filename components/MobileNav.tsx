@@ -92,8 +92,8 @@ const MobileNav = () => {
                 leaveTo="transform opacity-0 scale-95"
             >
               <DisclosurePanel className="px-12 grid">
-                <Link className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md" href="/analytics">Битрикс24</Link>
-                <Link className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md" href="/engagement">1С-Битрикс: Управление сайтом</Link>
+                <Link className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md" href="/solutions/bitrix-24">Битрикс24</Link>
+                <Link className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md" href="/solutions/1c-bitrix">1С-Битрикс: Управление сайтом</Link>
               </DisclosurePanel>
             </Transition>
           </Disclosure>
