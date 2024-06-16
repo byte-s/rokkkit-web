@@ -14,6 +14,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
 import CorporateLayout from '@/layouts/CorporateLayout'
 import EcommerceLayout from '@/layouts/EcommerceLayout'
+import NotFound from '../../not-found'
 
 export async function generateMetadata({
   params,
@@ -100,7 +101,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
       name: author.name,
     }
   })
-  let currentLayout = 'PostSimple';
+  let currentLayout = 'NotFound';
   switch (slug) {
     case 'corporate':
       currentLayout = 'CorporateLayout';
@@ -112,14 +113,15 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
       currentLayout = 'EcommerceLayout';
       break;
     default: 
-      currentLayout = 'PostSimple';
+      currentLayout = 'NotFound';
+      break;
   }
   let defaultLayout = currentLayout;
   const layouts = {
     CorporateLayout,
     LandingLayout,
     EcommerceLayout,
-    PostSimple
+    NotFound
 }
   const Layout = layouts[defaultLayout]
 

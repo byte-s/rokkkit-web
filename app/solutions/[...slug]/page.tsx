@@ -12,6 +12,7 @@ import BitrixLayout from '@/layouts/BitrixLayout'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
+import NotFound from '../../not-found'
 
 
 export async function generateMetadata({
@@ -99,7 +100,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
       name: author.name,
     }
   })
-  let currentLayout = 'PostSimple';
+  let currentLayout = 'NotFound';
   switch (slug) {
     case 'bitrix-24':
       currentLayout = 'Bitrix24Layout';
@@ -108,12 +109,13 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
       currentLayout = 'BitrixLayout';
       break;
     default: 
-      currentLayout = 'PostSimple';
+      currentLayout = 'NotFound';
   }
   let defaultLayout = currentLayout;
   const layouts = {
     Bitrix24Layout,
     BitrixLayout,
+    NotFound
 }
   const Layout = layouts[defaultLayout]
 

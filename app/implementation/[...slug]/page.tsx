@@ -13,6 +13,7 @@ import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
 import ProjectLayout from '@/layouts/ProjectLayout'
+import NotFound from '../../not-found'
 
 export async function generateMetadata({
   params,
@@ -111,14 +112,14 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
       currentLayout = 'SupportLayout';
       break;
     default: 
-      currentLayout = 'PostSimple';
+      currentLayout = 'NotFound';
   }
   let defaultLayout = currentLayout;
   const layouts = {
     ProjectLayout,
     PackageLayout,
     SupportLayout,
-    PostSimple
+    NotFound
 }
   const Layout = layouts[defaultLayout]
 
