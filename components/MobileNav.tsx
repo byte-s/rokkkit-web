@@ -118,33 +118,30 @@ const MobileNav = () => {
                     <label className="text-md font-semibold mb-1.5">Внедрение</label>
                     <Link
                         className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Пакетное</Link>
+                        href="/implementation/package">Пакетное</Link>
                     <Link
                         className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Проектное</Link>
+                        href="/implementation/project">Проектное</Link>
                     <Link
                         className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Сопровождение и поддержка</Link>
+                        href="/implementation/support">Сопровождение и поддержка</Link>
                   </div>
                   <div className="grid grid-cols-1">
                     <label className="text-md font-semibold mb-1.5">Сайты</label>
                     <Link
                         className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Корпоративный</Link>
+                        href="/development/corporate">Корпоративный</Link>
+                    {/* <Link
+                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
+                        href="/">Сайт-визитка</Link> */}
                     <Link
                         className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Сайт-визитка</Link>
+                        href="/development/landing-page">Landing page</Link>
                     <Link
                         className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Landing page</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">На 1С-Битрикс</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Интернет-магазин</Link>
+                        href="/development/ecommerce">Интернет-магазин</Link>
                   </div>
-                  <div className="grid grid-cols-1">
+                  {/* <div className="grid grid-cols-1">
                     <label className="text-md font-semibold mb-1.5">Интеграция с Битрикс24</label>
                     <Link
                         className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
@@ -230,7 +227,7 @@ const MobileNav = () => {
                     <Link
                         className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
                         href="/">DevOps</Link>
-                  </div>
+                  </div> */}
                 </div>
               </DisclosurePanel>
             </Transition>
