@@ -80,7 +80,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                 <div>
                     <header className='grid lg:grid-cols-2 lg:grid-rows-1 items-center justify-between my-8'>
                         <div className='row-start-1 lg:row-start-auto'>
-                            <h1 className='text-5xl mb-4 font-bold'>
+                            <h1 className='lg:text-5xl mb-4 text-3xl font-bold'>
                             {title}
                             </h1>
                             <h2 className='text-xl mb-4'>
@@ -93,41 +93,41 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                         </div>
                     </header>
                     <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-                    <div className="prose max-w-none pb-4 pt-10 dark:prose-invert">{children}</div>
+                        <div className="prose max-w-none pb-4 pt-10 dark:prose-invert">{children}</div>
                     </div>
                     <div className="xl:col-span-3 mt-5 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0">
                         <div className="w-full">
                             <div className='slider-container'>
                             <Slider {...settings} className="">
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Удобным для пользователя
                                         </div>
                                         <div className='text-base font-light'>
-                                            Для каждого проекта разрабатывается индивидуальный дизайн с использованием фирменного стиля компании. Готовый продукт адаптивен ко всем устройствам, с интуитивно понятным интерфейсом с учетом UI-аспектов и высокой скоростью загрузки страниц. Внешний облик подчеркивает статус и репутацию бренда, одновременно побуждая посетителей обратиться в компанию и сделать заказ.
+                                            Мы создаем каждый проект с уникальным дизайном, который учитывает корпоративный стиль вашей компании. Наш готовый продукт адаптирован для всех устройств и имеет интуитивно понятный интерфейс с учетом UI-аспектов и быструю скорость загрузки страниц. Внешний вид наших сайтов не только подчеркивает статус и репутацию вашего бренда, но и мотивирует посетителей обратиться в вашу компанию и сделать заказ.
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Убедительным и продающим
                                         </div>
                                         <div className='text-base font-light'>
-                                            Каталог продукции и услуг оснащается акцентными конверсионными элементами — формами для заказа, онлайн-консультантами, формами расчета стоимости доставки или калькулятором сделки. Весь функционал утверждается на этапе проектирования. Ресурс оптимизируется для поисковых систем, что позволяет уже при запуске получать клиентов.
+                                            Наш каталог продуктов и услуг оборудован акцентными конверсионными элементами - формами для заказа, онлайн-консультантами, формами расчета стоимости доставки или калькулятором сделки. Мы утверждаем весь функционал на этапе проектирования. Наш ресурс оптимизирован для поисковых систем, что позволяет нам сразу после запуска привлекать клиентов.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Экспертным, подчеркивающим статус
                                         </div>
                                         <div className='text-base font-light'>
-                                        Создаем уникальный, экспертный контент, достоверно отражающий успехи компании и преимущества реализуемой продукции. Ваш сайт будет являться визитной карточкой организации, по которой становится очевидным высокий уровень ее авторитета и компетентности.
+                                            Мы создаем уникальный, экспертный контент, который точно отражает успехи вашей компании и преимущества вашей продукции. Ваш сайт станет визитной карточкой организации, которая демонстрирует высокий уровень вашего авторитета и компетентности.
                                         </div>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                                 </path>
                                             </svg>
                                         </div>
-                                        Индивидуальный дизайн в фирменном стиле — с нуля разрабатываем графическое оформление, создаем персонализированный интерфейс.
+                                        Дизайн в уникальном корпоративном стиле — начиная с нуля, мы создаем визуальное оформление и индивидуальный пользовательский интерфейс.
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal items-center flex-row flex'>
                                         <div className='size-5 mr-4'>
@@ -156,7 +156,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                                 </path>
                                             </svg>
                                         </div>
-                                        Обширный каталог товаров или услуг — детально проработанный каталог с удобной навигацией, системой поиска и фильтрации по параметрам.
+                                        Обширный каталог продуктов или услуг — мы разрабатываем детализированный каталог с удобной навигацией, поисковой системой и фильтрацией по различным характеристикам.
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal items-center flex-row flex'>
                                         <div className='size-5 mr-4'>
@@ -165,7 +165,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                                 </path>
                                             </svg>
                                         </div>
-                                        Корзину для покупок/Форму заказа — все онлайн заказы автоматически обрабатываются CRM-системой или в случае необходимости попадают к менеджерам. Мы проводим интеграцию сайтов с CRM и 1С в качестве дополнительной услуги.
+                                        Корзину для покупок/Форму для оформления заказа — все интернет-заказы автоматически обрабатываются системой CRM или при необходимости направляются менеджерам. Мы предлагаем интеграцию сайтов с CRM и 1С в качестве дополнительной услуги.
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal items-center flex-row flex'>
                                         <div className='size-5 mr-4'>
@@ -174,7 +174,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                                 </path>
                                             </svg>
                                         </div>
-                                        Создание личного кабинета — предоставляет возможность для регистрации на портале внутренних сотрудников предприятия для организации рабочих процессов, а также партнеров по бизнесу и гостей ресурса.
+                                        Разработку личного кабинета — это добавляет возможность регистрации на портале как внутренних сотрудников компании для управления рабочими процессами, так и бизнес-партнеров и посетителей сайта.
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal items-center flex-row flex'>
                                         <div className='size-5 mr-4'>
@@ -183,7 +183,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                                 </path>
                                             </svg>
                                         </div>
-                                        Базовую поисковую оптимизацию — проект реализуется при участии SEO-специалиста, оптимизирован и готов к дальнейшему развитию.
+                                        Базовую поисковую оптимизацию — проект реализуется с участием специалиста по SEO, оптимизирован и готов к дальнейшему развитию.
                                     </List.Item>
                                 </List>
                             </div>
@@ -202,7 +202,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                             Поддержка пользователей
                                         </div>
                                         <div>
-                                            Разработка корпоративного сайта предоставляет бизнесу возможность получать от пользователей обратную связь по продуктам и услугам компании с помощью разработки модуля отзывов, комментариев и форм для заполнения. Таким образом можно презентовать целевой аудитории новый продукт, узнать у ЦА основные проблемы для дальнейшего увеличения качества сервиса.
+                                            Корпоративный сайт разрабатывается с целью получения обратной связи от пользователей о продуктах и услугах компании. Это достигается за счет интеграции модулей отзывов, комментариев и форм обратной связи. Это позволяет представить новый продукт целевой аудитории, выявить основные проблемы, с которыми сталкиваются пользователи, и улучшить качество обслуживания.
                                         </div>
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal justify-start items-start flex-col flex'>
@@ -213,7 +213,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                             Коммуникация с сотрудниками и партнерами
                                         </div>
                                         <div>
-                                            Корпоративный портал отлично подходит для коммуникации и взаимодействия сотрудников внутри компании или с партнерами. Постоянная связь с персоналом позволяет увеличить качество предоставляемого сервиса и улучшить контроль над подчиненными.
+                                            Корпоративный веб-портал идеально подходит для общения и взаимодействия сотрудников внутри компании и партнеров. Постоянное общение с персоналом помогает улучшить качество предоставляемого сервиса и контроль над выполнением задач.
                                         </div>
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal justify-start items-start flex-col flex'>
@@ -224,7 +224,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                             Поиск новых сотрудников
                                         </div>
                                         <div>
-                                            Ресурс также может использоваться для управления персоналом, а также местом размещения вакансий и привлечения новых сотрудников.
+                                            Корпоративный сайт может служить площадкой для управления персоналом, размещения вакансий и привлечения новых кадров.
                                         </div>
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal justify-start items-start flex-col flex'>
@@ -235,7 +235,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                             Размещение каталога
                                         </div>
                                         <div>
-                                            При создании корпоративного сайта продумывается функционал по публикации каталога продуктов или услуг в виде прайс-листа, карточек товаров и т.д. В разработку под ключ входит услуга подключения автоматической выгрузки из сторонних программ.
+                                            Во время создания корпоративного сайта мы предусматриваем функционал для публикации каталога продуктов или услуг в виде прайс-листа, карточек товаров и пр. Мы также предлагаем услугу автоматической выгрузки данных из внешних программ в рамках комплексной разработки.
                                         </div>
                                     </List.Item>
                                 </List>
@@ -255,7 +255,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                             Веб-разработка любого уровня сложности
                                         </div>
                                         <div>
-                                            Первый Бит — крупнейший федеральный партнер «1С-Битрикс» с опытом работы с такими заказчиками, как Газпром, Литрес, МГМУ им. Сеченова и другими. Независимо от отрасли бизнеса, требований к функционалу, нагруженности на ресурс, соберем выделенную команду с подобающим уровнем компетенций и реализуем в установленные в рамках договора сроки.
+                                            Мы обладаем необходимыми компетенциями для реализации проектов любого масштаба и сложности, учитывая особенности вашего бизнеса, требования к функционалу и нагрузке на ресурс. Наши специалисты готовы воплотить ваши задачи в жизнь, соблюдая сроки, установленные в договоре.
                                         </div>
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal justify-start items-start flex-col flex'>
@@ -266,7 +266,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                             Ответственность перед каждым заказчиком
                                         </div>
                                         <div>
-                                            Подход к разработке корпоративного сайта не меняется в худшую сторону из-за статуса, бюджета, масштаба бизнеса клиента. Выполняем обязательства согласно внутреннему регламенту компании, с поэтапной проработкой сайта от предпроектной аналитики до финального тестирования и сдачи заказчику.
+                                            Наша политика в отношении каждого проекта не меняется в зависимости от статуса, бюджета или размера бизнеса клиента. Мы строго следуем внутреннему регламенту компании, осуществляя детальную проработку сайта на всех этапах – от предпроектного анализа до финального тестирования и сдачи проекта клиенту.
                                         </div>
                                     </List.Item>
                                     <List.Item className='text-base py-2 font-normal justify-start items-start flex-col flex'>
@@ -277,7 +277,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                             Предоставляем услугу под ключ
                                         </div>
                                         <div>
-                                            После окончания разработки, предлагаем техническую поддержку, продвижение и любые доработки для развития сайта.
+                                            Мы не просто разрабатываем сайт, но и предлагаем дальнейшую техническую поддержку, продвижение и доработку проекта для его успешного развития.
                                         </div>
                                     </List.Item>
                                 </List>
@@ -291,7 +291,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                 <div className='font-normal text-base'>
                                     В результате вы получите сайт, оформленный в фирменном стиле с уникальным дизайном. Он станет отличным генератором дополнительных продаж и поднимет узнаваемость вашего бренда.
                                 </div>
-                                <div className='grid grid-cols-2 gap-4 mt-4 xl:grid-cols-4'>
+                                <div className='grid grid-cols-1 gap-4 mt-4 xl:grid-cols-4'>
                                     <div className='border border-gray-400 dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:bg-gray-900 hover:text-gray-100 rounded-md p-4'>
                                         <div className='text-3xl font-bold mb-2'>
                                             01.
@@ -380,7 +380,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                <div className="mx-auto mt-4 w-full divide-y divide-white/5 rounded-xl bg-gray/5">
                                     <Disclosure as="div" className="py-2" defaultOpen={true}>
                                         <DisclosureButton className="group flex w-full items-center justify-between">
-                                            <span className="text-base font-bold group-data-[hover]:text-gray-500/80">
+                                            <span className="text-start text-base font-bold group-data-[hover]:text-gray-500/80">
                                                 Входит ли контент в стоимость сайта?
                                             </span>
                                             <ChevronDownIcon className="size-5 " />
@@ -391,7 +391,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                     </Disclosure>
                                     <Disclosure as="div" className="py-2" defaultOpen={true}>
                                         <DisclosureButton className="group flex w-full items-center justify-between">
-                                            <span className="text-base font-bold group-data-[hover]:text-gray-500/80">
+                                            <span className="text-start text-base font-bold group-data-[hover]:text-gray-500/80">
                                                 Подходит ли ресурс под поисковое продвижение?
                                             </span>
                                             <ChevronDownIcon className="size-5 " />
@@ -402,7 +402,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                     </Disclosure>
                                     <Disclosure as="div" className="py-2" defaultOpen={true}>
                                         <DisclosureButton className="group flex w-full items-center justify-between">
-                                            <span className="text-base font-bold group-data-[hover]:text-gray-500/80">
+                                            <span className="text-start text-base font-bold group-data-[hover]:text-gray-500/80">
                                                 Каков срок создания сайта?
                                             </span>
                                             <ChevronDownIcon className="size-5 " />
@@ -413,7 +413,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                     </Disclosure>
                                     <Disclosure as="div" className="py-2" defaultOpen={true}>
                                         <DisclosureButton className="group flex w-full items-center justify-between">
-                                            <span className="text-base font-bold group-data-[hover]:text-gray-500/80">
+                                            <span className="text-start text-base font-bold group-data-[hover]:text-gray-500/80">
                                                 Что если сайт перестанет работать?
                                             </span>
                                             <ChevronDownIcon className="size-5 " />
@@ -424,7 +424,7 @@ export default function CorporateLayout({ content, authorDetails, next, prev, ch
                                     </Disclosure>
                                     <Disclosure as="div" className="py-2" defaultOpen={true}>
                                         <DisclosureButton className="group flex w-full items-center justify-between">
-                                            <span className="text-base font-bold group-data-[hover]:text-gray-500/80">
+                                            <span className="text-start text-base font-bold group-data-[hover]:text-gray-500/80">
                                                 Насколько сложно добавлять информацию на сайт?
                                             </span>
                                             <ChevronDownIcon className="size-5 " />

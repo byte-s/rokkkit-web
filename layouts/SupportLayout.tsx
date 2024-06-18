@@ -73,7 +73,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                 <div>
                     <header className='grid lg:grid-cols-2 lg:grid-rows-1 items-center justify-between my-8'>
                         <div className='row-start-1 lg:row-start-auto'>
-                            <h1 className='text-5xl mb-4 font-bold'>
+                            <h1 className='lg:text-5xl text-3xl  mb-4 font-bold'>
                             {title}
                             </h1>
                             <h2 className='text-xl mb-4'>
@@ -86,14 +86,14 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                         </div>
                     </header>
                     <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-                    <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
+                        <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
                     </div>
                     <div className="xl:col-span-3 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0">
                         <ul className='flex flex-col gap-y-4'>
                             <li className='bg-gray-200 dark:text-gray-900 p-8 dark:bg-gray-100 w-full rounded-md'>
                                 <div>
                                     <div className='text-2xl font-bold'>
-                                        Бесплатное базовое сопровождение при покупке лицензии или любой услуги:
+                                        Бесплатное базовое сопровождение при покупке лицензии или внедрения:
                                     </div>
                                 </div>
                                 <div>
@@ -132,7 +132,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Консультируем только администраторов портала;
+                                            Предоставляем консультации только для администраторов портала;
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -198,7 +198,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Консультируем только администраторов портала;
+                                            Предоставляем консультации только для администраторов портала;
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -207,7 +207,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            3 часа в месяц на настройку/обучение (сгорают каждый месяц);
+                                            Предоставляем 3 часа в месяц на настройку и обучение (сгорают каждый месяц);
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -216,7 +216,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Настройки + доработки за доп. часы;
+                                            Дополнительные настройки и доработки за дополнительные часы;
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -225,19 +225,19 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Скидка на ставку часа 5%.
+                                            Скидка 5% на ставку часа.
                                         </List.Item>
                                     </List>
                                 </div>
                                 <div className=''>
-                                    <div className='flex flex-row '>
+                                    <div className='flex lg:flex-row flex-col'>
                                         <div className='mt-4 mb-2 mr-8'>
                                             <div className='font-normal text-sm text-gray-500'>Срок обучения</div>
                                             <div className='font-bold text-3xl'>1 мес.</div>
                                         </div>
                                         <div className='mt-4 mb-2'>
                                             <div className='font-normal text-sm text-gray-500'>Стоимость</div>
-                                            <div className='font-bold text-3xl'>149 000 ₽</div>
+                                            <div className='font-bold text-3xl'>99 000 ₽</div>
                                         </div>
                                     </div>
                                     
@@ -276,7 +276,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>
-                                        Отвечаем в течение 2 рабочих часов;
+                                        Отвечаем на 95% вопросов в течение рабочего дня;
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -285,7 +285,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>
-                                        Консультируем только администраторов портала;
+                                        Предоставляем консультации только для администраторов портала;
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -294,7 +294,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>
-                                        5 часов в месяц на настройку/обучение (сгорают каждый месяц);
+                                        Предоставляем 5 часов в месяц на настройку и обучение (сгорают каждый месяц);
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -303,7 +303,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>
-                                        Контроль и редактирование прав доступа пользователей;
+                                        Управление и редактирование прав доступа пользователей для обеспечения безопасности данных;
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -312,7 +312,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>     
-                                        Отчет об уровне эффективности работы менеджеров в конце месяца;
+                                        Ежемесячный отчет об эффективности работы менеджеров для повышения производительности;
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -321,7 +321,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>     
-                                        Аудит CRM раз в квартал;
+                                        Квартальный аудит CRM для обеспечения оптимального использования системы;
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -330,7 +330,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>     
-                                        Настройки + доработки за доп. часы;
+                                        Дополнительные настройки и улучшения за дополнительные часы;
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -339,13 +339,13 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>     
-                                        Скидка на ставку часа 10%.
+                                        Скидка 10% на ставку часа.
                                     </List.Item>
                                 </List>
                                 <div className=''>
                                     <div className='mt-4 mb-2'>
                                         <div className='font-normal text-sm text-gray-500'>Стоимость</div>
-                                        <div className='font-bold text-3xl'>30 000 ₽/мес.</div>
+                                        <div className='font-bold text-3xl'>28 000 ₽/мес.</div>
                                     </div>
                                     <ShortFormInvert/>
                                 </div>
@@ -666,7 +666,7 @@ export default function SupportLayout({ content, authorDetails, next, prev, chil
                                 <div className=''>
                                     <div className='mt-4 mb-2'>
                                         <div className='font-normal text-sm text-gray-500'>Стоимость</div>
-                                        <div className='font-bold text-3xl'>Индивидуально</div>
+                                        <div className='font-bold text-2xl lg:text-3xl'>Индивидуально</div>
                                     </div>
                                     <ShortFormInvert/>
                                 </div>

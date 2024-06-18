@@ -63,9 +63,6 @@ const Header = () => {
                                   <Link
                                       className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-sm"
                                       href="/implementation/project">Проектное</Link>
-                                  <Link
-                                      className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-sm"
-                                      href="/implementation/support">Сопровождение и поддержка</Link>
                               </div>
                               <div className="grid grid-cols-1">
                                   <label className="text-sm font-semibold mb-1.5">Сайты</label>

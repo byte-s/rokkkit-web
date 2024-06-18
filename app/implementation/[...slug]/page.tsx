@@ -108,9 +108,6 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
     case 'project':
       currentLayout = 'ProjectLayout';
       break;
-    case 'support':
-      currentLayout = 'SupportLayout';
-      break;
     default: 
       currentLayout = 'NotFound';
   }
@@ -118,7 +115,6 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
   const layouts = {
     ProjectLayout,
     PackageLayout,
-    SupportLayout,
     NotFound
 }
   const Layout = layouts[defaultLayout]

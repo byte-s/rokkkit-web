@@ -124,7 +124,7 @@ export default function ProjectLayout({ content, authorDetails, next, prev, chil
                         <div className='font-medium text-lg'>
                             После этого осуществляется разработка и последующая настройка продукта. Завершающий этап – обучение сотрудников, подготовка сопроводительной документации (регламенты, инструкции) и дальнейшее сопровождение портала. При проектном внедрении мы последовательно проходим все этапы.
                         </div>
-                        <div className='grid grid-cols-2 gap-4 mt-4 xl:grid-cols-4'>
+                        <div className='grid grid-cols-1 gap-4 mt-4 xl:grid-cols-4'>
                             <div className='border border-gray-400 dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:bg-gray-900 hover:text-gray-100 rounded-md p-4'>
                                 <div className='text-3xl font-bold mb-2'>
                                     01.

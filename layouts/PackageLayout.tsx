@@ -86,7 +86,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                         </div>
                     </header>
                     <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-                    <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
+                        <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
                     </div>
                     <div className="xl:col-span-3 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0">
                         <ul className='flex flex-col gap-y-4'>
@@ -96,7 +96,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                         CRM Lite
                                     </div>
                                     <div className='mt-4 text-lg font-medium'>
-                                        После внедрения Битрикс24 у вашей компании появится комплексный инструмент для работы с клиентами с возможностью проектного управления. С помощью CRM удастся оптимизировать внутренние процессы предприятия и увеличить эффективность вашего бизнеса.
+                                        Превратите ваш бизнес в производительную силу, используя наше предложение по внедрению CRM Lite от Битрикс24. Этот комплексный инструмент позволит вам эффективно взаимодействовать с клиентами и управлять проектами, а также оптимизировать внутренние процессы вашего предприятия.
                                     </div>
                                 </div>
                                 <div>
@@ -108,8 +108,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            
-                                            Заведение сотрудников до 10 человек, настройка 1 воронки (карточки, лиды), заведение до 10 полей в карточке, подключение почтовых ящиков сотрудников;
+                                            Мы проведем регистрацию до 10 сотрудников, настроим одну воронку (карточки, лиды) и заведем до 10 полей в карточке, а также подключим почтовые ящики сотрудников.
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -118,7 +117,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Настройка организационной структуры и прав доступа пользователей;
+                                            Мы настроим организационную структуру и права доступа пользователей.
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -127,7 +126,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Заявки будут автоматически попадать в Битрикс24 CRM;
+                                            Все заявки будут автоматически отправляться в CRM Битрикс24.
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -136,7 +135,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Настройка трех отчетов CRM по мониторингу основных показателей;
+                                            Мы настроим три отчета CRM для мониторинга ключевых показателей.
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -145,7 +144,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Подключение сервиса обратного звонка, чата и формы обратной связи с помощью виджета Битрикс24 на один сайт компании;
+                                            Мы подключим сервис обратного звонка, чат и форму обратной связи с помощью виджета Битрикс24 на одном сайте вашей компании.
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -154,7 +153,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Один час группового обучения менеджеров по продажам работе с Битрикс24 CRM от консультанта;
+                                            Мы проведем одночасовое групповое обучение менеджеров по продажам работе с CRM Битрикс24 под руководством нашего консультанта.
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -163,14 +162,14 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Оптимизация карточки лида, контакта, сделки (список полей предоставляет заказчик);
+                                            Мы оптимизируем карточку лида, контакта, сделки (список полей предоставляет заказчик).
                                         </List.Item>
                                     </List>
                                 </div>
                                 <div className=''>
                                     <div className='mt-4 mb-2'>
                                         <div className='font-normal text-sm text-gray-500'>Стоимость</div>
-                                        <div className='font-bold text-3xl'>39 000 ₽</div>
+                                        <div className='font-bold text-3xl'>29 000 ₽</div>
                                     </div>
                                     <ShortFormInvert/>
                                 </div>
@@ -181,7 +180,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                         CRM Pro
                                     </div>
                                     <div className='mt-4 text-lg font-medium'>
-                                        После внедрения Битрикс24 у вашей компании появится комплексный инструмент для работы с клиентами с возможностью проектного управления. С помощью CRM удастся оптимизировать внутренние процессы предприятия и увеличить эффективность вашего бизнеса.
+                                        Благодаря внедрению Битрикс24, ваш бизнес получит универсальный инструмент для взаимодействия с клиентами и управления проектами, что позволит оптимизировать внутренние процессы и увеличить производительность.
                                     </div>
                                 </div>
                                 <div>
@@ -193,8 +192,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            
-                                            Настройка воронки продаж (2 направления): этапы сделок, карточки сделок, автоматизация воронок (до 10 роботов), триггеров смены стадий, шаблонов уведомлений;
+                                            Установка продажного воронки (2 направления): конфигурация этапов сделки, карточки сделки, автоматизация воронок (до 10 роботов), триггеры для изменения стадий, шаблоны уведомлений;
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -203,7 +201,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Интервью с ключевыми сотрудниками предприятия на любой стадии ведения проекта — пять интервью;
+                                            Проведение пяти интервью с ключевыми сотрудниками организации на любом этапе реализации проекта;
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -212,7 +210,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Один час группового обучения менеджеров по продажам работе с Битрикс24 CRM от консультанта;
+                                            Организация одного часа группового обучения менеджеров по продажам работы с CRM Битрикс24 под руководством нашего специалиста;
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -221,7 +219,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Настройка воронки лидов: этапы, карточка, автоматизация воронок (до 10 роботов), шаблонов уведомлений;
+                                            Настройка воронки лидов: этапы, карточки, автоматизация воронок (до 10 роботов), шаблоны уведомлений;
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -230,7 +228,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Глубокая настройка прав доступа к Битрикс24 CRM (до 4-х ролей);
+                                            Глубокая конфигурация прав доступа к CRM Битрикс24 (до 4 ролей);
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -239,7 +237,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Настройка трех отчетов CRM по мониторингу основных показателей;
+                                            Создание трех отчетов CRM для контроля ключевых показателей;
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -248,7 +246,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Подключение каналов связи с клиентами: телефония, мессенджеры, электронная почта (до 3-х ящиков);
+                                            Интеграция каналов коммуникации с клиентами: телефония, мессенджеры, электронная почта (до 3 почтовых ящиков);
                                         </List.Item>
                                         <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                             <div className='size-5 mr-2'>
@@ -257,14 +255,14 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                     </path>
                                                 </svg>
                                             </div>
-                                            Один час обучения РОПа.
+                                            Организация одного часа обучения для руководителя проекта.
                                         </List.Item>
                                     </List>
                                 </div>
                                 <div className=''>
                                     <div className='mt-4 mb-2'>
                                         <div className='font-normal text-sm text-gray-500'>Стоимость</div>
-                                        <div className='font-bold text-3xl'>149 000 ₽</div>
+                                        <div className='font-bold text-3xl'>109 000 ₽</div>
                                     </div>
                                     <ShortFormInvert/>
                                 </div>
@@ -275,8 +273,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                         CRM «Под ключ»
                                     </div>
                                     <div className='mt-4 text-lg font-medium'>
-                                    При внедрении «под ключ», мы используем проектный подход к внедрению. Такой подход ориентирован на крупные организации.
-                                    После внедрения Битрикс24 у вашей компании появится комплексный инструмент для работы с клиентами с возможностью проектного управления. С помощью CRM удастся оптимизировать внутренние процессы предприятия и увеличить эффективность вашего бизнеса.
+                                        Внедрение «Под ключ» подразумевает проектный подход в процессе внедрения. Этот метод идеально подходит для крупных компаний. После внедрения Битрикс24, вашей компании будет доступен универсальный инструмент для взаимодействия с клиентами и управления проектами. С помощью CRM вы сможете оптимизировать внутренние процессы и улучшить эффективность вашего бизнеса.
                                     </div>
                                 </div>
                                 <List className='mt-2 grid gap-x-4 grid-cols-1 lg:grid-cols-2'>
@@ -287,7 +284,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>
-                                        Потенциальный большой объем доработок;
+                                        Возможность большого объема кастомизации;
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -296,7 +293,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>
-                                        Переход с самописной или сильно доработанной системы;
+                                        Миграция с самописной или сильно модифицированной системы;
                                     </List.Item>
                                     <List.Item className='text-base font-normal text-gray-900 items-start flex-row flex'>
                                         <div className='size-5 mr-2'>
@@ -305,7 +302,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                                 </path>
                                             </svg>
                                         </div>
-                                        Объемные интеграции с другими системами и сервисами.
+                                        Масштабные интеграции с другими системами и сервисами.
                                     </List.Item>
                                 </List>
                                 <div className='font-bold text-lg my-4'>
@@ -364,7 +361,7 @@ export default function PackageLayout({ content, authorDetails, next, prev, chil
                                 <div className=''>
                                     <div className='mt-4 mb-2'>
                                         <div className='font-normal text-sm text-gray-500'>Стоимость</div>
-                                        <div className='font-bold text-3xl'>от 200 000 ₽</div>
+                                        <div className='font-bold text-3xl'>от 190 000 ₽</div>
                                     </div>
                                     <ShortFormInvert/>
                                 </div>

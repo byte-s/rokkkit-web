@@ -16,8 +16,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "@/components/slider.css"
 import CallBlock from '@/components/CallBlock'
+import ShortFormInvert from '@/components/shortFormInvert'
 import ShortForm from '@/components/shortForm'
-
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -69,7 +69,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
             <ScrollTopAndComment />
             <article>
                 <div>
-                    <header className='grid grid-cols-2 items-center my-8'>
+                    <header className='grid lg:grid-cols-2 lg:grid-rows-1 items-center justify-between my-8'>
                         <div>
                             <h1 className='text-5xl mb-4 font-bold'>
                             {title}
@@ -79,15 +79,15 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                             </h2>
                             <ShortForm></ShortForm>
                         </div>
-                        <div className='grid col-end-auto justify-end'>
-                            <img className="w-full max-h-80"src={headerimage}></img>
+                        <div className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
+                            <img className="mb-4 w-full max-h-80"src={headerimage}></img>
                         </div>
                     </header>
                     <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
                     <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
                     </div>
                     <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
-                        <div className='grid grid-cols-2 xl:grid-cols-5 gap-2'>
+                        <div className='grid grid-cols-1 xl:grid-cols-5 gap-2'>
                             <div className="flex justify-between flex-col p-8 bg-gray-200 dark:text-gray-900 rounded-md">
                                 <div className='text-2xl font-bold mb-4'>
                                     Старт
@@ -100,7 +100,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                     <div className='text-2xl font-bold my-4'>
                                         5 270 ₽
                                     </div>
-                                    <ShortForm></ShortForm>
+                                    <ShortFormInvert></ShortFormInvert>
                                 </div>
                             </div>
                             <div className="flex justify-between flex-col p-8 bg-gray-200 dark:text-gray-900 rounded-md">
@@ -114,7 +114,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                     <div className='text-2xl font-bold my-4'>
                                         15 215 ₽
                                     </div>
-                                    <ShortForm></ShortForm>
+                                    <ShortFormInvert></ShortFormInvert>
                                 </div>
                             </div>
                             <div className="flex justify-between flex-col p-8 bg-gray-200 dark:text-gray-900 rounded-md">
@@ -128,7 +128,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                     <div className='text-2xl font-bold my-4'>
                                         34 765 ₽
                                     </div>
-                                    <ShortForm></ShortForm>
+                                    <ShortFormInvert></ShortFormInvert>
                                 </div>
                             </div>
                             <div className="flex justify-between flex-col p-8 bg-gray-200 dark:text-gray-900 rounded-md">
@@ -143,7 +143,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                     <div className='text-2xl font-bold my-4'>
                                         71 315 ₽
                                     </div>
-                                    <ShortForm></ShortForm>
+                                    <ShortFormInvert></ShortFormInvert>
                                 </div>
                             </div>
                             <div className="flex justify-between flex-col p-8 bg-gray-200 dark:text-gray-900 rounded-md">
@@ -157,7 +157,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                     <div className='text-2xl font-bold my-4'>
                                         1 699 000 ₽
                                     </div>
-                                    <ShortForm></ShortForm>
+                                    <ShortFormInvert></ShortFormInvert>
                                 </div>
                             </div>
                         </div>
@@ -166,13 +166,13 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                         <h2 className='my-8'>Стоимость разработки</h2>
                         <ul className='flex flex-col gap-y-4'>
                             <li className='hover:animate-jump hover:animate-once hover:animate-ease-out w-full'>
-                                <a href="" className='flex justify-between items-center bg-gray-200 dark:text-gray-900 lg:flex-row p-8 w-full dark:bg-gray-100 rounded-md'>
+                                <a href="/development/corporate" className='flex justify-between items-start lg:items-center bg-gray-200 dark:text-gray-900 flex-col lg:flex-row p-8 w-full dark:bg-gray-100 rounded-md'>
                                     <div>
                                         <div className='text-lg font-bold'>
                                             Корпоративный сайт
                                         </div>
                                         <div className='text-base font-normal'>
-                                            Многостраничный сайт компании с программируемым функционалом для привлечения трафика и клиентов из интернета с помощью SEO-продвижения и контекстной рекламы.
+                                            Мы предлагаем услуги по созданию многостраничного веб-сайта вашей компании с индивидуальным программным обеспечением, предназначенным для привлечения интернет-трафика и клиентов. Это достигается с помощью наших стратегий SEO и контекстной рекламы.
                                         </div>
                                     </div>
                                     <div className='flex mt-4 xl:mt-0 flex-row items-center justify-between'>
@@ -181,7 +181,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                                 от
                                             </span>
                                             <div className='w-full min-w-28 text-2xl font-semibold'>
-                                                200 000 ₽
+                                                100 000 ₽
                                             </div>
                                         </div>
                                         <div>
@@ -193,13 +193,13 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                 </a>
                             </li>
                             <li className='hover:animate-jump hover:animate-once hover:animate-ease-out w-full'>
-                                <a href="" className='flex justify-between items-center bg-gray-200 dark:text-gray-900 lg:flex-row p-8 w-full dark:bg-gray-100 rounded-md'>
+                                <a href="/development/ecommerce" className='flex justify-between flex-col items-start lg:items-center bg-gray-200 dark:text-gray-900 lg:flex-row p-8 w-full dark:bg-gray-100 rounded-md'>
                                     <div>
                                         <div className='text-lg font-bold'>
                                             Интернет-магазин
                                         </div>
                                         <div className='text-base font-normal'>
-                                            С современным, удобным для пользователей дизайном и поддержкой настройки сложных интеграций.
+                                            Наша команда разработает для вас интернет-магазин с современным дизайном, который удобен для ваших пользователей. Мы также предлагаем поддержку в настройке сложных интеграций для улучшения функциональности вашего магазина.
                                         </div>
                                     </div>
                                     <div className='flex mt-4 xl:mt-0 flex-row items-center justify-between'>
@@ -208,7 +208,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                                 от
                                             </span>
                                             <div className='w-full min-w-28 text-2xl font-semibold'>
-                                                194 000 ₽
+                                                110 000 ₽
                                             </div>
                                         </div>
                                         <div>
@@ -220,13 +220,13 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                 </a>
                             </li>
                             <li className='hover:animate-jump hover:animate-once hover:animate-ease-out w-full'>
-                                <a href="" className='flex justify-between items-center bg-gray-200 dark:text-gray-900 lg:flex-row p-8 w-full dark:bg-gray-100 rounded-md'>
+                                <a href="/development/landing" className='flex justify-between flex-col items-start lg:items-center bg-gray-200 dark:text-gray-900 lg:flex-row p-8 w-full dark:bg-gray-100 rounded-md'>
                                     <div>
                                         <div className='text-lg font-bold'>
                                             Лендинг под ключ
                                         </div>
                                         <div className='text-base font-normal'>
-                                            Создание одностраничного проекта на 1C-Битрикс с высокой конверсией и экспертным, продающим контентом.
+                                            Мы предлагаем услуги по созданию полностью функционального одностраничного проекта на платформе 1C-Битрикс. Этот проект будет иметь высокую конверсию и содержать экспертный, убедительный контент.
                                         </div>
                                     </div>
                                     <div className='flex mt-4 xl:mt-0 flex-row items-center justify-between'>
@@ -235,7 +235,7 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                                                 от
                                             </span>
                                             <div className='w-full min-w-28 text-2xl font-semibold'>
-                                                80 000 ₽
+                                                40 000 ₽
                                             </div>
                                         </div>
                                         <div>
@@ -254,86 +254,86 @@ export default function BitrixLayout({ content, authorDetails, next, prev, child
                             <div className='slider-container'>
                             <Slider {...settings} className="">
                                 <div className='flex'>
-                                    <div className='h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
                                         <span className='slide-number text-3xl font-bold flex justify-end'>
                                             01.
                                         </span>
                                         <div>
                                             <div className='text-base font-medium'>
-                                                Платформа подойдет для любого сайта — небольших блогов или интернет-магазинов с 1000+ страниц, порталов и агрегаторов. На выбор 5 лицензий, исходя из требований к сложности функционала.
+                                                1C-Битрикс подходит для любого типа веб-сайтов, от маленьких блогов до крупных интернет-магазинов с более чем 1000 страниц, порталов и агрегаторов. У вас есть возможность выбрать из пяти различных лицензий, в зависимости от ваших требований к функциональности.
                                             </div>
                                         </div>
                                         
                                     </div>
                                 </div>
                                 <div className='flex'>
-                                    <div className='h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
                                         <span className='slide-number text-3xl font-bold flex justify-end'>
                                             02.
                                         </span>
                                         <div>
                                             <div className='text-base font-medium'>
-                                                Безопасность — система надежно защищена от взлома и других злонамеренных действий в интернете.
+                                                Безопасность ваших данных гарантирована, система надежно защищена от взлома и других злонамеренных действий в сети Интернет.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='flex'>
-                                    <div className='h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
                                         <span className='slide-number text-3xl font-bold flex justify-end'>
                                             03.
                                         </span>
                                         <div>
                                             <div className='text-base font-medium'>
-                                                CMS Битрикс интегрируется с CRM, аналитическими инструментами, программами учета, базами данных и другими сторонними система и приложениями.
+                                                Система управления сайтом 1C-Битрикс легко интегрируется с CRM, аналитическими инструментами, программами учета, базами данных и другими внешними системами и приложениями.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='flex'>
-                                    <div className='h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
                                         <span className='slide-number text-3xl font-bold flex justify-end'>
                                             04.
                                         </span>
                                         <div>
                                             <div className='text-base font-medium'>
-                                                Маркетплейс — магазин устанавливаемого ПО, содержит готовые решения, расширяющие базовый функционал продукта, как платные, так и бесплатные.
+                                                В Маркетплейсе, который является магазином устанавливаемого ПО, вы найдете множество готовых решений, которые расширяют базовый функционал продукта. Есть как платные, так и бесплатные варианты.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='flex'>
-                                    <div className='h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
                                         <span className='slide-number text-3xl font-bold flex justify-end'>
                                             05.
                                         </span>
                                         <div>
                                             <div className='text-base font-medium'>
-                                                Работа с административной панелью не требует профессиональных навыков и осваивается за 1-2 недели практики.
+                                                Работа с административной панелью не требует специальных навыков и осваивается всего за 1-2 недели практики.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='flex'>
-                                    <div className='h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
                                         <span className='slide-number text-3xl font-bold flex justify-end'>
                                             06.
                                         </span>
                                         <div>
                                             <div className='text-base font-medium'>
-                                                Производитель регулярно выпускает обновления и модернизирует продукт.
+                                                Производитель регулярно предоставляет обновления и модернизации продукта.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='flex'>
-                                    <div className='h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-48 flex-col flex justify-start items-top dark:text-gray-900 bg-gray-200 p-4 dark:bg-gray-100 rounded-md'>
                                         <span className='slide-number text-3xl font-bold flex justify-end'>
                                             07.
                                         </span>
                                         <div>
                                             <div className='text-base font-medium'>
-                                                Широкие возможности доработок сайтов на платформе.
+                                                Благодаря широким возможностям доработок, сайты на платформе 1C-Битрикс могут быть полностью адаптированы под ваши индивидуальные потребности.
                                             </div>
                                         </div>
                                     </div>

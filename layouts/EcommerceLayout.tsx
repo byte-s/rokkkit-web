@@ -92,85 +92,85 @@ export default function EcommerceLayout({ content, authorDetails, next, prev, ch
                         </div>
                     </header>
                     <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-                    <div className="prose max-w-none pb-4 pt-10 dark:prose-invert">{children}</div>
+                        <div className="prose max-w-none pb-4 pt-10 dark:prose-invert">{children}</div>
                     </div>
                     <div className="xl:col-span-3 mt-4 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0">
                         <div className="w-full">
                             <div className='slider-container'>
                             <Slider {...settings} className="">
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Удобным для пользователя
                                         </div>
                                         <div className='text-base font-light'>
-                                            Создание современного интернет‑магазина предполагает проработку UI/UX дизайна. При подобном подходе внедряются конверсионные пути и разрабатывается пользовательский интерфейс. Для этого создается понятная иерархия структуры, удобная система навигации, учитывается расположение конверсионных форм на страницах товаров и категорий.
+                                            Создание современного интернет‑магазина подразумевает разработку UI/UX дизайна. При таком подходе внедряются конверсионные пути и создается пользовательский интерфейс. Создается понятная структура, удобная система навигации, учитывается размещение форм на страницах товаров и категорий.
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Современный
                                         </div>
                                         <div className='text-base font-light'>
-                                            Внешний вид формирует первое впечатление пользователя о сайте и во многом влияет на решение о покупке. Современный дизайн должен иметь цельную, завершенную концепцию, а также отражать фирменный стиль бренда и особенности продвигаемого продукта. В зависимости от заложенного бюджета, мы используем готовое решение или создаем уникальное с нуля.
+                                            Визуальный облик формирует первое впечатление пользователя о сайте и значительно влияет на решение о покупке. Современный дизайн должен иметь цельную, завершенную концепцию, отражать фирменный стиль бренда и особенности продвигаемого продукта. В зависимости от бюджета, мы предлагаем готовые решения или создаем уникальный дизайн.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Адаптивный
                                         </div>
                                         <div className='text-base font-light'>
-                                            Для комфортного взаимодействия пользователя с сайтом требуется корректное отображение ресурса на всех устройствах, разрешениях, операционных системах, во всех браузерах. Плюсом адаптивности является сохранение функциональности и юзабилити сайта при работе на любом гаджете.
+                                            Комфортное взаимодействие пользователя с сайтом требует корректного отображения ресурса на всех устройствах, разрешениях, операционных системах, во всех браузерах. Адаптивность сохраняет функциональность и юзабилити сайта при работе на любом гаджете.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Оптимизированный под поиск
                                         </div>
                                         <div className='text-base font-light'>
-                                            Каждый этап разработки проводится согласно рекомендациям SEO-специалиста, что обеспечивает органичное продвижение сайта в поисковых системах сразу после релиза. Для этого проводится базовая оптимизация страниц, функциональное и юзабилити-тестирование, настройка индексации.
+                                            Каждый этап разработки проводится с учетом рекомендаций SEO-специалиста, что обеспечивает органичное продвижение сайта в поисковых системах сразу после запуска. Для этого проводится базовая оптимизация страниц, функциональное и юзабилити-тестирование, настройка индексации.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Продающий
                                         </div>
                                         <div className='text-base font-light'>
-                                            В услугу включена разработка UX-дизайна, пользовательского интерфейса (UI), детально прорабатываются карточки товаров. На основе проведенного аудита составляются конверсионные маршруты — предполагаемый путь пользователей по сайту до этапа оформления заказа. Проработка каждой мелочи и работа с юзабилити позволяют создать сайт, который решает цель визита пользователей и стимулирует продажи.
+                                            Разработка UX-дизайна, пользовательского интерфейса (UI), детальное проработка карточек товаров включены в услугу. На основе проведенного аудита создаются конверсионные маршруты — предполагаемый путь пользователей по сайту до этапа оформления заказа. Проработка каждой детали и работа с юзабилити позволяют создать сайт, который отвечает на цели визита пользователей и стимулирует продажи.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Быстрый
                                         </div>
                                         <div className='text-base font-light'>
-                                            Готовый ресурс полностью оптимизирован и быстро загружается как в desktop-версии, так и с мобильных гаджетов. Это достигается за счет расчета нагрузки и подбора подходящего по мощности хостинга, написания чистого валидного кода, а также проведения технической оптимизации.
+                                            Финальный продукт полностью оптимизирован и обеспечивает быструю загрузку как на компьютерах, так и на мобильных устройствах. Достигается это благодаря учету нагрузки, выбору подходящего по производительности хостинга, созданию чистого валидного кода и технической оптимизации.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Удобный в управлении
                                         </div>
                                         <div className='text-base font-light'>
-                                            Проводим интеграцию с CMS, что значительно упрощает администрирование сайта после релиза. CMS позволяет самостоятельно наполнять сайт контентом, работать со структурой, редактировать 1000+ товаров одним кликом, настраивать плагины и установленные модули без необходимости в привлечении специалистов. Это удобно, быстро, а главное, безопасно.
+                                            Интеграция с CMS облегчает управление сайтом после запуска. CMS позволяет самостоятельно добавлять на сайт контент, управлять структурой, редактировать большое количество товаров одним кликом, настраивать плагины и установленные модули без привлечения сторонних специалистов. Это удобно, быстро и безопасно.
                                         </div>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@ export default function EcommerceLayout({ content, authorDetails, next, prev, ch
                                 <div className='font-normal text-base'>
                                     Услуга разработки под ключ строго регламентирована и реализовывается поэтапно.
                                 </div>
-                                <div className='grid grid-cols-2 gap-4 mt-4 xl:grid-cols-3'>
+                                <div className='grid grid-cols-1 gap-4 mt-4 xl:grid-cols-3'>
                                     <div className='border border-gray-400 dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:bg-gray-900 hover:text-gray-100 rounded-md p-4'>
                                         <div className='text-3xl font-bold mb-2'>
                                             01.
@@ -272,7 +272,7 @@ export default function EcommerceLayout({ content, authorDetails, next, prev, ch
                             <h2 className='py-4'>Разрабатываем интернет‑магазин любого уровня сложности и решаем нетривиальные задачи</h2>
                             <div className="w-full">
                                 <div className='text-base font-normal'>
-                                    Например, подключаем самописные API, CMS или БД, создаем многоуровневую логику. Для каждого проекта разрабатывается уникальный дизайн и функционал любой сложности, с учетом специфики конкурентной среды и требований клиента. Также предоставляем полный спектр услуг по дальнейшему развитию и сопровождению e-commerce проектов:
+                                    Мы обеспечиваем подключение кастомных API, CMS или баз данных, а также создаем сложную многоуровневую логику. Каждый проект разрабатывается индивидуально с учетом конкурентного окружения и требований заказчика, предлагая уникальный дизайн и функционал. Наша команда также предлагает полный спектр услуг для дальнейшего развития и поддержки проектов электронной коммерции:
                                 </div>
                                 <List className='mt-2 text-gray-900 dark:text-gray-100'>
                                     <List.Item className='text-base py-2 font-medium justify-start items-center flex-row flex'>
@@ -295,15 +295,15 @@ export default function EcommerceLayout({ content, authorDetails, next, prev, ch
                                     </List.Item>
                                 </List>
                                 <div className='text-base mt-2 font-normal'>
-                                    При необходимости также обучаем сотрудников компании или берем на себя администрирование вашего интернет-магазина. Если вам необходима консультация или помощь в разработке, оставьте заявку через форму обратной связи. Мы ответим на все вопросы и поможем подобрать оптимальное решение для ваших задач.
+                                    При необходимости мы обучаем персонал компании или берем на себя управление вашим интернет-магазином. Если вам требуется консультация или помощь в разработке, заполните форму для обратной связи. Мы ответим на все ваши вопросы и поможем найти наилучшее решение для ваших потребностей.
                                 </div>
-                                <div className='mt-4 grid grid-cols-2 bg-gray-200 dark:text-gray-900 lg:flex-row py-8 px-12 w-full dark:bg-gray-100 rounded-md'>
-                                    <div>
+                                <div className='mt-4 grid grid-cols-1 justify-items-start lg:justify-items-stretch lg:grid-cols-4 bg-gray-200 dark:text-gray-900 py-8 px-12 w-full dark:bg-gray-100 rounded-md'>
+                                    <div className='col-span-3'>
                                         <div className='mb-2'>
                                             Стоимость услуги
                                         </div>
                                         <div className='text-base font-normal'>
-                                            Создадим онлайн-магазин, ориентированный вашу целевую аудиторию. Наша цель — высокая конверсия посетителей и продажи для вашего бизнеса. Оставьте заявку для более точного расчета стоимости разработки.
+                                            Создадим онлайн-магазин, ориентированный вашу целевую аудиторию. Нашей задачей является обеспечение высокой конверсии посетителей и увеличение продаж вашего бизнеса. Свяжитесь с нами для получения подробного расчета стоимости разработки.
                                         </div>
                                     </div>
                                     <div className='flex flex-col items-end justify-center'>

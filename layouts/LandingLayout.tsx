@@ -93,14 +93,14 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                         </div>
                     </header>
                     <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-                    <div className="prose max-w-none pb-4 pt-10 dark:prose-invert">{children}</div>
+                        <div className="prose max-w-none pb-4 pt-10 dark:prose-invert">{children}</div>
                     </div>
                     <div className="xl:col-span-3 mt-5 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0">
                         <div className="w-full">
                             <div className='slider-container'>
                             <Slider {...settings} className="">
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Индивидуальный дизайн
                                         </div>
@@ -111,45 +111,45 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                                 </div>
                                 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Продающие качества
                                         </div>
                                         <div className='text-base font-light'>
-                                            Для последующего коммерческого успеха вашего сайта, наши специалисты прорабатывают внешний вид посадочной странице, с учетом современных стандартов веб-дизайна и пользовательского опыта (UX) для увеличения продаж и конверсии.
+                                            С целью дальнейшего коммерческого успеха вашего сайта, наши специалисты разрабатывают внешний вид лендинга, с учетом современных стандартов веб-дизайна и пользовательского опыта (UX), чтобы увеличить продажи и конверсию.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Адаптивность
                                         </div>
                                         <div className='text-base font-light'>
-                                            Наши лендинг пейдж, разработанные под ключ отлично смотрятся на любых устройствах и адаптированы под все современные разрешения, от Full HD мониторов до экранов мобильных телефонов.
+                                            Наши лендинги, разработанные под ключ, прекрасно выглядят на всех устройствах и адаптированы под все современные разрешения, от Full HD мониторов до экранов мобильных телефонов.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
                                         <div className='mb-2 text-xl font-bold'>
                                             Качественный контент
                                         </div>
                                         <div className='text-base font-light'>
-                                            От качества контента зависит степень заинтересованности клиента в продукте. Наши авторы составят грамотный, продуманный текст о Вашем товаре или услуге, описывающий конкурентные преимущества и УТП (уникальное торговое предложение).
+                                            От превосходства контента зависит уровень интереса клиента к продукту. Наши авторы создадут грамотный, глубоко продуманный текст о вашем товаре или услуге, подчеркивающий конкурентные преимущества и уникальное предложение.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className='flex'>
-                                    <div className='h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
-                                        <div className='mb-2 text-xl font-bold'>
+                                    <div className='h-full lg:h-72 flex-col flex justify-center items-top dark:text-gray-900 bg-gray-200 p-8 dark:bg-gray-100 rounded-md'>
+                                        <div className='mb-2 text-xl font-bold break-words'>
                                             Многофункциональность
                                         </div>
                                         <div className='text-base font-light'>
-                                            Мультилендинг, Геотаргетинг. Разработка лендинга предполагает функционал по автоматической трансформации контента посадочной страницы под запрос от пользователя из поисковых систем и согласно его гео-позиции. Запуск А/Б тестирования поможет определить более конверсионный вариант дизайна посадочной страницы.
+                                            Мультилендинг, Геотаргетинг. Создание лендинга включает функционал для автоматического изменения контента лендинга в соответствии с запросами пользователя из поисковых систем и его геолокацией. Запуск А/Б тестирования поможет выявить более конверсионный вариант дизайна лендинга.
                                         </div>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                                 <div className='font-normal text-base'>
                                     Ваш будущий сайт прорабатывается в несколько этапов. Ниже определим основные:
                                 </div>
-                                <div className='grid grid-cols-2 gap-4 mt-4 xl:grid-cols-3'>
+                                <div className='grid grid-cols-1 gap-4 mt-4 xl:grid-cols-3'>
                                     <div className='border border-gray-400 dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:bg-gray-900 hover:text-gray-100 rounded-md p-4'>
                                         <div className='text-3xl font-bold mb-2'>
                                             01.
@@ -173,7 +173,7 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                                             Аналитика и проектирование
                                         </div>
                                         <div className='text-base font-normal mb-4'>
-                                            Проведем аудит вашей компании и изучим возможности и конкурентные преимущества продукта. Анализ рынка и целевой аудитории поможет выявить боли и потребности потенциального клиента.
+                                            Мы проведем детальную экспертизу вашего бизнеса, исследуем рыночные возможности и конкурентные преимущества вашего продукта. Анализ рынка и целевых аудиторий поможет обнаружить основные проблемы и потребности вашего потенциального клиента.
                                         </div>   
                                     </div>
                                     <div className='border border-gray-400 dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:bg-gray-900 hover:text-gray-100 rounded-md p-4'>
@@ -184,7 +184,7 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                                             Создание UX-прототипа и копирайтинг
                                         </div>
                                         <div className='text-base font-normal mb-4'>
-                                            Формирование структуры посадочной страницы, интерфейса и расположения блоков, опираясь на пользовательский опыт вашей целевой аудитории.
+                                            Мы определим структуру целевой страницы, интерфейс и распределение блоков, опираясь на опыт пользователей вашей целевой аудитории.
                                         </div>   
                                     </div>
                                     <div className='border border-gray-400 dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:bg-gray-900 hover:text-gray-100 rounded-md p-4'>
@@ -195,7 +195,7 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                                             UI-Дизайн
                                         </div>
                                         <div className='text-base font-normal mb-4'>
-                                            Проектирование дизайна сайта, проработка визуальной части лендинга. Качественное графическое оформление улучшает восприятие информации и привлекает внимание клиента.
+                                            Мы займемся разработкой дизайна сайта и визуальной составляющей лендинга. Продуманное графическое оформление улучшает восприятие информации и привлекает внимание клиента.
                                         </div>   
                                     </div>
                                     <div className='border border-gray-400 dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:bg-gray-900 hover:text-gray-100 rounded-md p-4'>
@@ -206,7 +206,7 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                                             Верстка, программирование и тестирование
                                         </div>
                                         <div className='text-base font-normal mb-4'>
-                                            Верстка и разработка функционала лендинга выполняется под ключ. Тестирование перед запуском с выявлением и устранением возможных ошибок.
+                                            Верстка и разработка функционала лендинга будет выполнена под ключ. Перед запуском мы проведем тестирование, выявим и устраним возможные ошибки.
                                         </div>   
                                     </div>
                                     <div className='border border-gray-400 dark:hover:bg-gray-100 dark:hover:text-gray-900 hover:bg-gray-900 hover:text-gray-100 rounded-md p-4'>
@@ -217,7 +217,7 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                                             Настройка и ведение контекстной рекламы
                                         </div>
                                         <div className='text-base font-normal mb-4'>
-                                            Сбор ключевых запросов и запуск рекламной кампании в Яндекс и Google. Именно контекстная реклама является основным источником трафика для целевой страницы. 
+                                            Мы соберем все необходимые ключевые запросы и запустим рекламную кампанию в Яндекс и Google. Именно контекстная реклама станет основным драйвером трафика для вашей целевой страницы.
                                         </div>   
                                     </div>
                                 </div>
@@ -226,10 +226,10 @@ export default function LandingLayout({ content, authorDetails, next, prev, chil
                     </div>
                     <div className="xl:col-span-3 mt-8 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0 border-l-2 border-gray-900 dark:border-gray-100 pl-8">
                         <p className='text-base font-normal mb-2'>
-                            Если вам нужен эффективный инструмент для продаж вашего продукта или услуги, а также помощь в привлечении клиентов, открытия нового канала продаж в интернете, который впоследствии станет основным — обращайтесь к нам, в Первый Бит.
+                            Если вам требуется действенный инструмент для увеличения продаж ваших товаров или услуг, а также поддержка в привлечении клиентов и создании нового канала интернет-продаж, который со временем станет главным — обратитесь к нам, в Rokkit. 
                         </p>
                         <p className='text-base font-normal'>
-                            Увеличим продажи с помощью современного лендинга, реализуем спектр работ от этапа создания концепции до веб-разработки и запуска рекламы.
+                            Мы поможем увеличить продажи с помощью современного и эффективного лендинга, предоставив полный спектр услуг от формирования концепции до веб-разработки и запуска рекламы.
                         </p>
                     </div>
                     <CallBlock/>
