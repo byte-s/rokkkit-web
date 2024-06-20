@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Rokkit - заказать внедрение CRM, разработку сайтов и интернет-магазинов',
   author: 'Rokkit',
   headerTitle: 'Rokkit',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'Внедрение корпоративных порталов, CRM Битрикс24 и разработка сайтов. Решения под разные типы бизнеса.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://rokkit-web.com',
