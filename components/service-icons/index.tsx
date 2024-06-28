@@ -27,7 +27,7 @@ const ServiceIcon = ({ kind, size = 8 }: ServiceIconProps) => {
     <>
       <span className="sr-only">{kind}</span>
       <ServiceSvg
-        className={`fill-current text-gray-100 hover:text-primary-500 dark:text-gray-900 dark:hover:text-primary-400 h-${size} w-${size}`}
+        className={`fill-current h-${size} w-${size}`}
       />
     </>
   )

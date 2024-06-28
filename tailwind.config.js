@@ -22,7 +22,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Suisse Intl', 'sans-serif'],
       },
       colors: {
         primary: colors.slate,
@@ -67,5 +67,20 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('tailwindcss-animated'), require('flowbite/plugin')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animated'),
+    require('flowbite/plugin'),
+    require('daisyui'),
+    require('tailwind-typewriter')({
+      wordsets: {
+        services: {
+          words: ['уникального плана роста', 'современной разработки', 'внедрения CRM систем', 'внедрения корпоративных порталов'],
+          delay: 3,
+          writeSpeed: 0.2
+        }
+      }
+    })
+  ],
 }

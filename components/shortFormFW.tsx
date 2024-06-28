@@ -7,7 +7,7 @@ import { Button, Dialog, DialogPanel, DialogTitle, Transition, TransitionChild, 
 import { useState } from 'react'
 import clsx from 'clsx'
 
-const ShortFormInvert = () => {
+const ShortFormFW = () => {
     const [result, setResult] = React.useState("");
 
     let [isOpen, setIsOpen] = useState(false);
@@ -57,8 +57,8 @@ const ShortFormInvert = () => {
                             leaveFrom="opacity-100 transform-[scale(100%)]"
                             leaveTo="opacity-0 transform-[scale(95%)]"
                         >
-                            <DialogPanel className="w-full max-w-md rounded-xl bg-gray-600/75 dark:bg-gray-300/75 p-6 backdrop-blur-xl">
-                                <DialogTitle as="h3" className="text-xl font-medium text-gray-100 dark:text-gray-900">
+                            <DialogPanel className="w-full max-w-md rounded-xl bg-gray-200/75 dark:bg-gray-800/75 dark:text-gray-100 p-6 backdrop-blur-xl">
+                                <DialogTitle as="h3" className="text-xl font-medium text-gray-900 dark:text-gray-100">
                                     Пожалуйста, оставьте свои контактные данные
                                 </DialogTitle>
                                 <form className={styles.form} onSubmit={onSubmit}>
@@ -66,14 +66,14 @@ const ShortFormInvert = () => {
                                         <div className="pb-2">
                                             <div className="mt-2 grid grid-cols-1 gap-y-4">
                                                 <div className="sm:col-span-3">
-                                                    <label htmlFor="name" className="font-semibold block text-sm font-medium leading-6 text-gray-100 dark:text-gray-900">Ваше имя</label>
+                                                    <label htmlFor="name" className="block text-sm font-base leading-6 text-gray-900 dark:text-gray-100">Ваше имя</label>
                                                     <div className="mt-2">
                                                         <input required type="text" name="name" id="name" placeholder="Иван" autoComplete="name" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:placeholder:text-gray-600 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-gray-900 dark:focus:ring-gray-100 sm:text-sm sm:leading-6 dark:bg-gray-300 bg-gray-300 dark:text-gray-900"/>
                                                     </div>
                                                 </div>
 
                                                 <div className="sm:col-span-3">
-                                                    <label htmlFor="price" className="font-semibold block text-sm font-medium leading-6 text-gray-100 dark:text-gray-900">Номер телефона</label>
+                                                    <label htmlFor="price" className="block text-sm font-base leading-6 text-gray-900 dark:text-gray-100">Номер телефона</label>
                                                     <div className="relative mt-2 rounded-md shadow-sm">
                                                         <InputMask mask="+7 (999) 999-99-99" required autoComplete='phone' type="text" name="phone" id="phone" className="block w-full rounded-md border-0 py-1.5  pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 dark:placeholder:text-gray-600 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-gray-900 dark:focus:ring-gray-100 sm:text-sm sm:leading-6 dark:bg-gray-300 bg-gray-300 dark:text-gray-900" placeholder="+7 (999) 999-99-99"/>
                                                         <div className="absolute inset-y-0 right-0 flex items-center"></div>
@@ -81,7 +81,7 @@ const ShortFormInvert = () => {
                                                 </div>
                                             </div>
                                             <div className="mt-6 flex items-center justify-start gap-x-6">
-                                                <button type="submit" className="hover:animate-jump hover:animate-once hover:animate-ease-out rounded-md bg-gray-400 dark:bg-gray-300 px-3 py-2 text-sm font-semibold text-gray-100 dark:text-gray-900 shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2  focus-visible:outline-gray-600">Отправить</button>
+                                                <button type="submit" className="hover:animate-jump hover:animate-once hover:animate-ease-out rounded-md bg-gray-900 dark:bg-gray-300 px-3 py-2 text-sm font-semibold text-gray-100 dark:text-gray-900 shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2  focus-visible:outline-gray-600">Отправить</button>
                                             </div>
                                         </div>
                                     </div>
@@ -92,8 +92,8 @@ const ShortFormInvert = () => {
                 </div>
             </Dialog>
             </Transition>
-            <button onClick={open} className='hover:animate-jump hover:animate-once hover:animate-ease-out rounded-md bg-gray-900 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 w-36 flex justify-center text-center'>
-                Заказать
+            <button onClick={open} className='hover:animate-jump hover:animate-once hover:animate-ease-out dark:bg-gray-100 dark:text-gray-900 rounded-md bg-gray-900 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 w-full flex justify-center text-center'>
+                                Заказать
             </button>
         </>
         
@@ -101,4 +101,4 @@ const ShortFormInvert = () => {
     )
 }
 
-export default ShortFormInvert
+export default ShortFormFW
