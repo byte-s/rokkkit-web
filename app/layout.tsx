@@ -11,6 +11,33 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 import styles from '@/components/styles.module.css'
+import localFont from "next/font/local";
+
+const Suisse_Intl = localFont({
+  preload: true,
+  src: [
+    {
+      path: '../fonts/SuisseIntl-Regular.otf',
+      weight: '400',
+    },
+    {
+      path: '../fonts/SuisseIntl-Medium.otf',
+      weight: '500',
+    },
+    {
+      path: '../fonts/SuisseIntl-SemiBold.otf',
+      weight: '600',
+    },
+    {
+      path: '../fonts/SuisseIntl-Bold.otf',
+      weight: '700',
+    },
+    {
+      path: '../fonts/SuisseIntl-Bold.otf',
+      weight: '800',
+    },
+  ],
+});
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -62,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${space_grotesk.variable} scroll-smooth`}
+      className={Suisse_Intl.className + ` scroll-smooth`}
       suppressHydrationWarning
     >
       <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
