@@ -11,7 +11,7 @@ const CallBlock = () => {
             <div className="bg-gray-200 dark:bg-gray-900 flex justify-center px-4 py-16">
                 <div className="flex flex-col items-start px-8">
                     <div className='text-start'>
-                        <h4 className={styles.callHead + ` font-black text-gray-900 dark:text-gray-100`}>
+                        <h4 className={styles.callHead + ` leading-8 font-black text-gray-900 dark:text-gray-100`}>
                             Поработаем вместе? Оставляйте заявку, а мы бесплатно проконсультируем, расскажем о
                             процессах, подготовим КП
                         </h4>

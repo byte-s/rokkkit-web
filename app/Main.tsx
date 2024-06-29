@@ -10,7 +10,7 @@ export default function Home() {
       <>
           <div className="space-y-5 mb-12 py-20 md:space-y-5 grid grid-cols-1 md:grid-cols-5 gap-8">
               <div className="md:col-span-3">
-                  <h1 className="font-black tracking-tight text-gray-900 dark:text-gray-100 leading-10 text-5xl md:text-6xl md:leading-14">
+                  <h1 className="font-black tracking-tight text-gray-900 dark:text-gray-100 leading-8 sm:leading-10 text-4xl sm:text-5xl md:text-6xl md:leading-14">
                       Улучшаем бизнес с помощью
                       <span
                           className="text-warning type-services"> </span>
@@ -46,9 +46,9 @@ export default function Home() {
 
           <div className="space-y-2 py-20 md:space-y-5 ">
               <div
-                  className="text-5xl font-black hyphens-manual leading-10 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-14">
-                  Мы команда разработчиков, специализиру&shy;ющихся на <span
-                  className="text-red-500">web-решениях,</span> направленных помочь нашим клиентам добиться успеха.
+                  className="sm:text-5xl text-4xl font-black hyphens-manual leading-8 sm:leading-10 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-14">
+                  Мы команда разработчи&shy;ков, специализи&shy;ру&shy;ющихся на <span
+                  className="text-red-500">web-решениях,</span> направлен&shy;ных помочь нашим клиентам добиться успеха.
               </div>
           </div>
 
@@ -140,8 +140,8 @@ export default function Home() {
 
           <div className="space-y-2 py-20 md:space-y-5 ">
               <div
-                  className="text-5xl font-black leading-10 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-14">
-                  <span className="text-blue-500">Наша миссия</span> - помочь своим клиентам зарабатывать больше с
+                  className="text-4xl sm:text-5xl font-black leading-8 sm:leading-10 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-14">
+                  <span className="text-blue-500">Наша миссия</span> - помочь своим клиентам зарабаты&shy;вать больше с
                   помощью <span className="text-violet-700">digital-решений.</span>
               </div>
           </div>

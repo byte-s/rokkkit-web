@@ -44,7 +44,7 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed left-0 top-0 z-10 h-full w-full transform bg-white opacity-95 duration-300 ease-in-out dark:bg-gray-950 dark:opacity-[0.98] ${
+        className={`fixed left-0 top-0 z-10 h-full w-full transform bg-white duration-300 ease-in-out dark:bg-gray-950 dark:opacity-[0.98] ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -70,7 +70,7 @@ const MobileNav = () => {
               <div key={link.title} className="px-12 py-4">
                 <Link
                     href={link.href}
-                    className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                    className="hover:scale-105 transition duration-300 text-2xl font-bold text-gray-900 dark:text-gray-100"
                     onClick={onToggleNav}
                 >
                   {link.title}
@@ -78,7 +78,7 @@ const MobileNav = () => {
               </div>
           ))}
           <Disclosure >
-            <DisclosureButton className="hover:animate-jump hover:animate-once hover:animate-ease-out group flex w-full items-center gap-1 text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 px-12 py-4">
+            <DisclosureButton className="hover:scale-105 transition duration-300 group flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-12 py-4">
               Решения
               <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')} />
             </DisclosureButton>
@@ -92,13 +92,13 @@ const MobileNav = () => {
                 leaveTo="transform opacity-0 scale-95"
             >
               <DisclosurePanel className="px-12 grid">
-                <Link className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md" href="/solutions/bitrix-24">Битрикс24</Link>
-                <Link className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md" href="/solutions/1c-bitrix">1С-Битрикс: Управление сайтом</Link>
+                <Link className="hover:scale-105 transition duration-300 mr-2 my-2 text-md" href="/solutions/bitrix24">Битрикс24</Link>
+                <Link className="hover:scale-105 transition duration-300 mr-2 my-2 text-md" href="/solutions/1c-bitrix">1С-Битрикс: Управление сайтом</Link>
               </DisclosurePanel>
             </Transition>
           </Disclosure>
           <Disclosure >
-            <DisclosureButton className="hover:animate-jump hover:animate-once hover:animate-ease-out group flex w-full items-center gap-1 text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 px-12 py-4">
+            <DisclosureButton className="hover:scale-105 transition duration-300 flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-12 py-4">
               Услуги
               <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')} />
             </DisclosureButton>
@@ -115,116 +115,26 @@ const MobileNav = () => {
 
                 <div className="space-y-2 xl:grid xl:grid-cols-4 gap-x-2 items-start">
                   <div className="grid grid-cols-1">
-                    <label className="text-md font-semibold mb-1.5">Внедрение</label>
+                    <label className="text-md font-semibold my-2">Внедрение</label>
                     <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
+                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
                         href="/implementation/package">Пакетное</Link>
                     <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
+                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
                         href="/implementation/project">Проектное</Link>
                   </div>
                   <div className="grid grid-cols-1">
-                    <label className="text-md font-semibold mb-1.5">Сайты</label>
+                    <label className="text-md font-semibold my-2">Сайты</label>
                     <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
+                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
                         href="/development/corporate">Корпоративный</Link>
-                    {/* <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Сайт-визитка</Link> */}
                     <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
+                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
                         href="/development/landing-page">Landing page</Link>
                     <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
+                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
                         href="/development/ecommerce">Интернет-магазин</Link>
                   </div>
-                  {/* <div className="grid grid-cols-1">
-                    <label className="text-md font-semibold mb-1.5">Интеграция с Битрикс24</label>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С 1С</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С телефонией</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С сайтом</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С мессенджерами и соцсетями</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С почтой</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С WhatsApp</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С управление сайтом (БУС)</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С WordPress</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С 1C:ЗУП</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С ОЗОН</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С 1С:Фреш</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С 1С:Документооборот</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С кассой</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Со СДЭК</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С 1С:Бухгалтерия</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">С Tilda</Link>
-                  </div>
-                  <div className="grid grid-cols-1">
-                    <label className="text-md font-semibold mb-1.5">Дополнительно</label>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Настройка</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Техподдержка</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Доработка</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Автоматизация</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Настройка сквозной аналитики</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Документооборот</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Аутстаффинг ИТ-специалистов</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Установка коробочной версии</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Настройка Экстранет</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">Импортозамещение</Link>
-                    <Link
-                        className="hover:animate-jump hover:animate-once hover:animate-ease-out mr-2 mb-1.5 text-md"
-                        href="/">DevOps</Link>
-                  </div> */}
                 </div>
               </DisclosurePanel>
             </Transition>
