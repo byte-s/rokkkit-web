@@ -15,6 +15,7 @@ import localFont from "next/font/local";
 
 const Suisse_Intl = localFont({
   preload: true,
+  variable: '--font-suisse-intl',
   src: [
     {
       path: '../fonts/SuisseIntl-Regular.otf',
@@ -89,7 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang={siteMetadata.language}
-      className={Suisse_Intl.className + ` scroll-smooth`}
+      className={`${Suisse_Intl.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
