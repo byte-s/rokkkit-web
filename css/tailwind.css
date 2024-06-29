@@ -7,35 +7,35 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/static/fonts/SuisseIntl-Regular.otf) format('opentype');
+  src: url("/static/fonts/SuisseIntl-Regular.otf") format('opentype');
 }
 @font-face {
   font-family: 'Suisse Intl';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/static/fonts/SuisseIntl-Medium.otf) format('opentype');
+  src: url("/static/fonts/SuisseIntl-Medium.otf") format('opentype');
 }
 @font-face {
   font-family: 'Suisse Intl';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/static/fonts/SuisseIntl-Semibold.otf) format('opentype');
+  src: url("/static/fonts/SuisseIntl-Semibold.otf") format('opentype');
 }
 @font-face {
   font-family: 'Suisse Intl';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/static/fonts/SuisseIntl-Bold.otf) format('opentype');
+  src: url("/static/fonts/SuisseIntl-Bold.otf") format('opentype');
 }
 @font-face {
   font-family: 'Suisse Intl';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(/static/fonts/SuisseIntl-Black.otf) format('opentype');
+  src: url("/static/fonts/SuisseIntl-Black.otf") format('opentype');
 }
 
 .task-list-item::before {
