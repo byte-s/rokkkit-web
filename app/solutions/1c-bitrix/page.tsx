@@ -60,7 +60,7 @@ export default function Page() {
           </div>
           <div
               className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
-            <img className="mb-4 w-full max-h-80 lg:max-h-96" src={'/static/images/1c-bitrix.png'}></img>
+            <img className="mb-4 w-full max-h-72 sm:max-h-80 lg:max-h-96" src={'/static/images/1c-bitrix.png'}></img>
           </div>
         </header>
         <div className="max-w-none py-10">

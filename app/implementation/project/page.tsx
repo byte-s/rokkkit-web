@@ -78,7 +78,7 @@ export default function Page() {
           </h2>
           <div className="grid md:grid-cols-4 md:grid-rows-2 gap-4 ">
             <div
-                className="row-span-2 col-span-2 relative before:z-10 before:top-0 before:bottom-0 before:right-0 before:left-0 before:rounded-xl before:absolute before:size-full before:bg-gray-950/40 h-full bg-cover bg-[url('/static/images/project-astr.jpg')] text-gray-100 p-12 rounded-xl">
+                className=" sm:row-span-2 sm:col-span-2 relative before:z-10 before:top-0 before:bottom-0 before:right-0 before:left-0 before:rounded-xl before:absolute before:size-full before:bg-gray-950/40 h-full bg-cover bg-[url('/static/images/project-astr.jpg')] text-gray-100 p-8 sm:p-12 rounded-xl">
               <div className='before:font-black relative font-black z-20 text-2xl mb-4'>Импортозамещение</div>
               <div className="mb-8 font-medium relative z-20">
                 Импортозамещение существующего решения (SAP, SharePoint, IBM, Oracle Portal) на Битрикс24
