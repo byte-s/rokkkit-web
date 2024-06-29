@@ -21,9 +21,6 @@ module.exports = {
         13: '3.25rem',
         14: '3.5rem',
       },
-      fontFamily: {
-        sans: ['Suisse Intl', 'sans-serif'],
-      },
       colors: {
         primary: colors.slate,
         gray: colors.gray,
