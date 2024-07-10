@@ -78,20 +78,20 @@ export default function Page() {
           </h2>
           <div className="grid md:grid-cols-4 md:grid-rows-2 gap-4 ">
             <div
-                className=" sm:row-span-2 sm:col-span-2 relative before:z-10 before:top-0 before:bottom-0 before:right-0 before:left-0 before:rounded-xl before:absolute before:size-full before:bg-gray-950/40 h-full bg-cover bg-[url('/static/images/project-astr.jpg')] text-gray-100 p-8 sm:p-12 rounded-xl">
+                className="hover:scale-105 transition duration-300 sm:row-span-2 sm:col-span-2 relative before:z-10 before:top-0 before:bottom-0 before:right-0 before:left-0 before:rounded-xl before:absolute before:size-full before:bg-gray-950/40 h-full bg-cover bg-[url('/static/images/project-astr.jpg')] text-gray-100 p-8 sm:p-12 rounded-xl">
               <div className='before:font-black relative font-black z-20 text-2xl mb-4'>Импортозамещение</div>
               <div className="mb-8 font-medium relative z-20">
                 Импортозамещение существующего решения (SAP, SharePoint, IBM, Oracle Portal) на Битрикс24
               </div>
               <IoCheckbox className='size-6 relative z-20'/>
             </div>
-            <div className="rounded-xl bg-gray-100 p-8">
+            <div className="hover:scale-105 transition duration-300 rounded-xl bg-gray-100 dark:bg-gray-900 p-8">
               <div className='font-medium mb-4'>
                 Уникальный функционал, которого нет в базовой версии Битрикс24
               </div>
               <IoCheckbox className='size-6'/>
             </div>
-            <div className='rounded-xl bg-gray-100 row-span-2 p-8'>
+            <div className='hover:scale-105 transition duration-300 rounded-xl bg-gray-100 dark:bg-gray-900 row-span-2 p-8'>
               <div className='text-lg leading-5 mb-4 font-bold'>
                 Объемные интеграции с другими системами:
               </div>
@@ -126,7 +126,7 @@ export default function Page() {
               </ul>
               <IoCheckbox className='mt-4 size-6 relative z-20'/>
             </div>
-            <div className="rounded-xl bg-gray-100 p-8">
+            <div className="hover:scale-105 transition duration-300 rounded-xl bg-gray-100 dark:bg-gray-900 p-8">
               <div className='font-medium mb-4'>
                 Комплексный проектный подход с большим объемом доработок Битрикс24
               </div>

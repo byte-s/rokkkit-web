@@ -64,7 +64,7 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className={styles.scrollNav+" fixed mt-8"}>
+        <nav className={styles.scrollNav + " fixed mt-8"}>
 
           {headerNavLinks.map((link) => (
               <div key={link.title} className="px-12 py-4">
@@ -77,10 +77,11 @@ const MobileNav = () => {
                 </Link>
               </div>
           ))}
-          <Disclosure >
-            <DisclosureButton className="hover:scale-105 transition duration-300 group flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-12 py-4">
+          <Disclosure>
+            <DisclosureButton
+                className="hover:scale-105 transition duration-300 group flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-12 py-4">
               Решения
-              <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')} />
+              <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')}/>
             </DisclosureButton>
             <Transition
                 as={Fragment}
@@ -92,15 +93,18 @@ const MobileNav = () => {
                 leaveTo="transform opacity-0 scale-95"
             >
               <DisclosurePanel className="px-12 grid">
-                <Link className="hover:scale-105 transition duration-300 mr-2 my-2 text-md" href="/solutions/bitrix24">Битрикс24</Link>
-                <Link className="hover:scale-105 transition duration-300 mr-2 my-2 text-md" href="/solutions/1c-bitrix">1С-Битрикс: Управление сайтом</Link>
+                <Link className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
+                      href="/solutions/bitrix24">Битрикс24</Link>
+                <Link className="hover:scale-105 transition duration-300 mr-2 my-2 text-md" href="/solutions/1c-bitrix">1С-Битрикс:
+                  Управление сайтом</Link>
               </DisclosurePanel>
             </Transition>
           </Disclosure>
-          <Disclosure >
-            <DisclosureButton className="hover:scale-105 transition duration-300 flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-12 py-4">
+          <Disclosure>
+            <DisclosureButton
+                className="hover:scale-105 transition duration-300 flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-12 py-4">
               Услуги
-              <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')} />
+              <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')}/>
             </DisclosureButton>
             <Transition
                 as={Fragment}
@@ -127,10 +131,10 @@ const MobileNav = () => {
                     <label className="text-md font-semibold my-2">Сайты</label>
                     <Link
                         className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
-                        href="/development/corporate">Корпоративный</Link>
+                        href="/development/corporative">Корпоративный</Link>
                     <Link
                         className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
-                        href="/development/landing-page">Landing page</Link>
+                        href="/development/landing">Landing page</Link>
                     <Link
                         className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
                         href="/development/ecommerce">Интернет-магазин</Link>

@@ -8,8 +8,8 @@ export default function Footer() {
     <footer>
       <div className="columns-3 mb-4 mt-16 flex space-x-2 justify-between items-center">
         {/*  */}
-        <div className="mb-2 flex space-x-2 text-sm text-gray-900 dark:text-gray-100">
-          <div>{siteMetadata.author}</div>
+        <div className="mb-2 flex space-x-2 text-sm">
+          <div className='font-medium'>{siteMetadata.author}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>Все права защищены</div>
         </div>

@@ -79,8 +79,8 @@ export default function Page() {
         </div>
         <div className="grid gap-8 max-w-7xl py-20 mx-auto ">
           <div
-              className='hover:scale-105 transition duration-300 grid md:grid-cols-3 gap-4 justify-between bg-gray-100 dark:text-gray-900 p-8 dark:bg-gray-100 w-full rounded-md'>
-            <div className='md:col-span-2'>
+              className='hover:scale-105 transition duration-300 grid md:grid-cols-3 gap-4 justify-between bg-gray-100 dark:text-gray-900 p-8 dark:bg-gray-900 w-full rounded-md'>
+            <div className='md:col-span-2 text-gray-900 dark:text-gray-100'>
               <div className='text-3xl font-black'>
                 CRM Lite
               </div>
@@ -170,26 +170,26 @@ export default function Page() {
             <div className=''>
               <div className='mt-4 mb-2'>
                 <div className='font-normal text-base text-gray-500'>Стоимость</div>
-                <div className='font-black text-4xl'>30 000 ₽</div>
+                <div className='font-black text-4xl text-gray-900 dark:text-gray-100'>30 000 ₽</div>
               </div>
-              <ShortFormInvert/>
+              <ShortForm/>
             </div>
           </div>
           <div
-              className='hover:scale-105 transition duration-300 grid md:grid-cols-3 gap-4 justify-between bg-gray-100 dark:text-gray-900 p-8 dark:bg-gray-100 w-full rounded-md'>
+              className='hover:scale-105 transition duration-300 grid md:grid-cols-3 gap-4 justify-between bg-gray-100 dark:text-gray-900 p-8 dark:bg-gray-900 w-full rounded-md'>
             <div className='md:col-span-2'>
               <div className='inline-flex items-center '>
-                <div className='text-3xl font-black'>
+                <div className='text-3xl font-black text-gray-900 dark:text-gray-100'>
                   CRM Pro
                 </div>
                 <div className='ml-2 p-3 badge badge-warning text-gray-50 font-bold'>
                   Рекомендуем
                 </div>
               </div>
-              <div className='mt-4 text-lg font-medium'>
+              <div className='mt-4 text-lg font-medium text-gray-900 dark:text-gray-100'>
                 Продвинутый пакет настроек для уверенного старта с Битрикс24.
               </div>
-              <div className='mt-4 text-lg font-bold'>
+              <div className='mt-4 text-lg font-bold text-gray-900 dark:text-gray-100'>
                 Все то, что в CRM Lite +
               </div>
               <List className='grid md:grid-cols-2 mt-2 text-base text-gray-900 dark:text-gray-100'>
@@ -253,9 +253,9 @@ export default function Page() {
             <div className=''>
               <div className='mt-4 mb-2'>
                 <div className='font-normal text-base text-gray-500'>Стоимость</div>
-                <div className='font-black text-4xl'>110 000 ₽</div>
+                <div className='font-black text-4xl text-gray-900 dark:text-gray-100'>110 000 ₽</div>
               </div>
-              <ShortFormInvert/>
+              <ShortForm/>
             </div>
           </div>
         </div>

@@ -94,7 +94,7 @@ export default function Home() {
                                   интернет-магазин на другую платформу.
                               </div>
                           </div>
-                          <Link href='' className="inline-flex font-medium items-center">
+                          <Link href='/development' className="inline-flex font-medium items-center">
                               Заказать
                               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 42 42"
                                    fill="currentColor" className="ml-1 h-5 w-5">
@@ -125,7 +125,7 @@ export default function Home() {
                                   помощью современной системы.
                               </div>
                           </div>
-                          <Link href='' className="inline-flex font-medium items-center">
+                          <Link href='/implementation' className="inline-flex font-medium items-center">
                               Заказать
                               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 42 42"
                                    fill="currentColor" className="ml-1 h-5 w-5">

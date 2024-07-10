@@ -18,11 +18,11 @@ export async function generateMetadata({
 }): Promise<Metadata | undefined> {
 
   return {
-    title: 'Создание корпоративного сайта',
-    description: 'Это ключевой инструмент для привлечения новых клиентов, укрепления доверия и улучшения общения. Мы реализуем бизнес-проекты с множеством интеграций и технических решений.',
+    title: 'Разработка лендинга под ключ',
+    description: 'Лендинг - это веб-страница, специально разработанная для привлечения внимания к определенному продукту или услуге вашего бизнеса. Ее главная задача - генерировать трафик и привлекать потенциальных клиентов.',
     openGraph: {
-      title: 'Создание корпоративного сайта',
-      description: 'Это ключевой инструмент для привлечения новых клиентов, укрепления доверия и улучшения общения. Мы реализуем бизнес-проекты с множеством интеграций и технических решений.',
+      title: 'Разработка лендинга под ключ',
+      description: 'Лендинг - это веб-страница, специально разработанная для привлечения внимания к определенному продукту или услуге вашего бизнеса. Ее главная задача - генерировать трафик и привлекать потенциальных клиентов.',
       locale: 'ru_RU',
       type: 'article',
     },
@@ -51,28 +51,28 @@ export default function Page() {
   };
   return (
       <>
-        <header className='grid lg:grid-cols-2 lg:grid-rows-1 items-center justify-between my-8 py-20'>
+        <header className='grid lg:grid-cols-2 lg:grid-rows-1 gap-8 items-center justify-between my-8 py-20'>
           <div>
             <h1 className='text-5xl mb-4 font-black'>
-              Создание корпоративного сайта
+              Разработка лендинга под ключ
             </h1>
             <h2 className='text-xl mb-4'>
-              Это ключевой инструмент для привлечения новых клиентов, укрепления доверия и улучшения общения. Мы
-              реализуем бизнес-проекты с множеством интеграций и технических решений.
+              Лендинг - это веб-страница, специально разработанная для привлечения внимания к определенному продукту или
+              услуге вашего бизнеса. Ее главная задача - генерировать трафик и привлекать потенциальных клиентов.
             </h2>
             <ShortForm></ShortForm>
           </div>
           <div
               className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
-            <img className="mb-4 w-full max-h-80 lg:max-h-96" src={'/static/images/corporate.webp'}></img>
+            <img className="mb-4 w-full max-h-80 lg:max-h-96" src={'/static/images/landing.webp'}></img>
           </div>
         </header>
 
         <div className="max-w-none py-10">
           <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
-            Каким должен быть бизнес-сайт
+            Каким должен лендинг
           </h2>
-          <div className='grid md:grid-cols-3 grid-cols-2 gap-8'>
+          <div className='grid md:grid-cols-4 grid-cols-2 gap-8'>
             <div className="">
               <svg className="size-16 mr-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                    height="24" color="currentColor"
@@ -85,7 +85,22 @@ export default function Page() {
                     stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <h3 className="mt-4 text-xl lg:text-2xl font-bold lg:font-black break-words !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
-                Удобным для пользователя
+                Качественным
+              </h3>
+            </div>
+            <div className="">
+              <svg className="size-16 mr-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24}
+                   height={24} color={"currentColor"}
+                   fill={"none"}>
+                <path
+                    d="M2 12C2 7.75736 2 5.63604 3.17157 4.31802C4.34315 3 6.22876 3 10 3H14C17.7712 3 19.6569 3 20.8284 4.31802C22 5.63604 22 7.75736 22 12C22 16.2426 22 18.364 20.8284 19.682C19.6569 21 17.7712 21 14 21H10C6.22876 21 4.34315 21 3.17157 19.682C2 18.364 2 16.2426 2 12Z"
+                    stroke="currentColor" strokeWidth="1.5"/>
+                <path d="M2 9H10C12.8284 9 14.2426 9 15.1213 9.87868C16 10.7574 16 12.1716 16 15V21"
+                      stroke="currentColor" strokeWidth="1.5"/>
+                <path d="M10 21L10 9" stroke="currentColor" strokeWidth="1.5"/>
+              </svg>
+              <h3 className="mt-4 text-xl lg:text-2xl font-bold lg:font-black hyphens-manual !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
+                Адаптивным
               </h3>
             </div>
             <div className="">
@@ -103,101 +118,39 @@ export default function Page() {
                     stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <h3 className="mt-4 text-xl lg:text-2xl font-bold lg:font-black hyphens-manual !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
-                Убедитель&shy;ным и продающим
+                Продающим
               </h3>
             </div>
             <div className="">
-              <svg className="!size-16 mr-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24}
+              <svg className="size-16 mr-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24}
                    height={24} color={"currentColor"}
                    fill={"none"}>
-                <path d="M12 22L10 16H2L4 22H12ZM12 22H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"
-                      strokeLinejoin="round"/>
                 <path
-                    d="M12 13V12.5C12 10.6144 12 9.67157 11.4142 9.08579C10.8284 8.5 9.88562 8.5 8 8.5C6.11438 8.5 5.17157 8.5 4.58579 9.08579C4 9.67157 4 10.6144 4 12.5V13"
-                    stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    d="M13.5 13L17 9M14 15C14 16.1046 13.1046 17 12 17C10.8954 17 10 16.1046 10 15C10 13.8954 10.8954 13 12 13C13.1046 13 14 13.8954 14 15Z"
+                    stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                <path d="M6 12C6 8.68629 8.68629 6 12 6C13.0929 6 14.1175 6.29218 15 6.80269" stroke="currentColor"
+                      strokeWidth="1.5" strokeLinecap="round"/>
                 <path
-                    d="M19 13C19 14.1046 18.1046 15 17 15C15.8954 15 15 14.1046 15 13C15 11.8954 15.8954 11 17 11C18.1046 11 19 11.8954 19 13Z"
+                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
                     stroke="currentColor" strokeWidth="1.5"/>
-                <path
-                    d="M10 4C10 5.10457 9.10457 6 8 6C6.89543 6 6 5.10457 6 4C6 2.89543 6.89543 2 8 2C9.10457 2 10 2.89543 10 4Z"
-                    stroke="currentColor" strokeWidth="1.5"/>
-                <path d="M14 17.5H20C21.1046 17.5 22 18.3954 22 19.5V20C22 21.1046 21.1046 22 20 22H19"
-                      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
               <h3 className="mt-4 text-xl lg:text-2xl font-bold lg:font-black hyphens-manual !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
-                Экспертным, подчеркива&shy;ющим статус
+                Быстрым
               </h3>
             </div>
           </div>
         </div>
-
-        <div className="max-w-none py-10">
-          <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
-            Что входит в услугу «Корпоративный сайт под ключ»
-          </h2>
-          <List className='mt-2 text-gray-900 dark:text-gray-100'>
-            <List.Item className='py-2 font-normal flex-row text-lg flex'>
-              <div className='size-6 mt-1 mr-4'>
-                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="32"
-                     width="32" xmlns="http://www.w3.org/2000/svg" className="size-6 mr-2">
-                  <path
-                      d="M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64zm-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58z">
-                  </path>
-                </svg>
-              </div>
-              Дизайн в уникальном корпоративном стиле — начиная с нуля, мы создаем визуальное оформление и
-              индивидуальный пользовательский интерфейс.
-            </List.Item>
-            <List.Item className='py-2 font-normal flex-row text-lg flex'>
-              <div className='size-6 mt-1 mr-4'>
-                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="32"
-                     width="32" xmlns="http://www.w3.org/2000/svg" className="size-6 mr-2">
-                  <path
-                      d="M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64zm-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58z">
-                  </path>
-                </svg>
-              </div>
-              Обширный каталог продуктов или услуг — мы разрабатываем детализированный каталог с удобной навигацией,
-              поисковой системой и фильтрацией по различным характеристикам.
-            </List.Item>
-            <List.Item className='py-2 font-normal flex-row text-lg flex'>
-              <div className='size-6 mt-1 mr-4'>
-                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="32"
-                     width="32" xmlns="http://www.w3.org/2000/svg" className="size-6 mr-2">
-                  <path
-                      d="M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64zm-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58z">
-                  </path>
-                </svg>
-              </div>
-              Корзину для покупок/Форму для оформления заказа — все интернет-заказы автоматически обрабатываются
-              системой CRM или при необходимости направляются менеджерам. Мы предлагаем интеграцию сайтов с CRM и 1С
-              в качестве дополнительной услуги.
-            </List.Item>
-            <List.Item className='py-2 font-normal flex-row text-lg flex'>
-              <div className='size-6 mt-1 mr-4'>
-                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="32"
-                     width="32" xmlns="http://www.w3.org/2000/svg" className="size-6 mr-2">
-                  <path
-                      d="M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64zm-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58z">
-                  </path>
-                </svg>
-              </div>
-              Разработку личного кабинета — это добавляет возможность регистрации на портале как внутренних
-              сотрудников компании для управления рабочими процессами, так и бизнес-партнеров и посетителей сайта.
-            </List.Item>
-            <List.Item className='py-2 font-normal flex-row text-lg flex'>
-              <div className='size-6 mt-1 mr-4'>
-                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="32"
-                     width="32" xmlns="http://www.w3.org/2000/svg" className="size-6 mr-2">
-                  <path
-                      d="M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64zm-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58z">
-                  </path>
-                </svg>
-              </div>
-              Базовую поисковую оптимизацию — проект реализуется с участием специалиста по SEO, оптимизирован и
-              готов к дальнейшему развитию.
-            </List.Item>
-          </List>
+        <div
+            className="mt-8 text-xl pb-4 xl:pb-0 border-l-2 border-gray-900 dark:border-gray-100 pl-8">
+          <p className='font-normal mb-2'>
+            Если вам требуется действенный инструмент для увеличения продаж ваших товаров или услуг, а также поддержка в
+            привлечении клиентов и создании нового канала интернет-продаж, который со временем станет главным —
+            обратитесь к нам, в Rokkit.
+          </p>
+          <p className='font-normal'>
+            Мы поможем увеличить продажи с помощью современного и эффективного лендинга, предоставив полный спектр услуг
+            от формирования концепции до веб-разработки и запуска рекламы.
+          </p>
         </div>
 
         <div className="max-w-none py-10">
@@ -208,9 +161,8 @@ export default function Page() {
                 Стоимость услуги
               </h2>
               <div className='text-lg font-normal'>
-                Разработаем корпоративный сайт, с вашими фирменным стилем. Нашаей задачей является максимально точно
-                и гармонично презентовать ваш бизнес в интернете. Свяжитесь с нами для получения
-                подробного расчета стоимости разработки.
+                Создадим лендинг, ориентированный под вашу целевую аудиторию. Нашей задачей является максимизация
+                конверсии и увеличение продаж вашего бизнеса. Свяжитесь с нами для получения подробного расчета стоимости разработки.
               </div>
             </div>
             <div className='col-span-2 flex flex-col items-center justify-center'>
@@ -234,7 +186,7 @@ export default function Page() {
                           от
                       </span>
                 <div className='text-4xl font-black'>
-                  100 000 ₽
+                  60 000 ₽
                 </div>
               </div>
               <ShortForm/>
@@ -290,7 +242,7 @@ export default function Page() {
 
         <div className="max-w-none py-10">
           <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
-            Этапы разработки корпоративного сайта
+            Этапы разработки интернет-магазина
           </h2>
           <h3 className="text-xl">
             В результате вы получите сайт, оформленный в фирменном стиле с уникальным дизайном. Он станет отличным
@@ -415,83 +367,6 @@ export default function Page() {
               <hr/>
             </li>
           </ul>
-        </div>
-        <div className="max-w-none py-10">
-          <div className="xl:col-span-3 mt-5 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0">
-            <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
-              Ответы на частые вопросы
-            </h2>
-            <div className="w-full">
-              <div className="text-lg mx-auto mt-4 w-full divide-y divide-white/5 rounded-xl bg-gray/5">
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
-                  <DisclosureButton className="group flex w-full items-center justify-between">
-                    <span
-                        className="text-start font-bold group-data-[hover]:text-gray-500/80">
-                        Входит ли контент в стоимость сайта?
-                    </span>
-                    <ChevronDownIcon className="size-5 "/>
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 font-normal">
-                    Да, мы занимаемся оформлением сайта под ключ. В перечень работ входит наполнение качественным
-                    контентом, подробно рассказывающим о достоинствах вашего продукта.
-                  </DisclosurePanel>
-                </Disclosure>
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
-                  <DisclosureButton className="group flex w-full items-center justify-between">
-                    <span
-                        className="text-start font-bold group-data-[hover]:text-gray-500/80">
-                        Подходит ли ресурс под поисковое продвижение?
-                    </span>
-                    <ChevronDownIcon className="size-5 "/>
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 font-normal">
-                    Полностью готов к продвижению. Корпоративный ресурс в процессе работы проходит базовую оптимизацию,
-                    структура проектируется совместно с SEO-специалистами.
-                  </DisclosurePanel>
-                </Disclosure>
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
-                  <DisclosureButton className="group flex w-full items-center justify-between">
-                    <span
-                        className="text-start font-bold group-data-[hover]:text-gray-500/80">
-                        Каков срок создания сайта?
-                    </span>
-                    <ChevronDownIcon className="size-5 "/>
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 font-normal">
-                    В среднем 1-2 месяца. Длительность веб-разработки зависит от масштабов проекта. Крупный сайт или
-                    портал может занимать до полугода, небольшой — 2 недели.
-                  </DisclosurePanel>
-                </Disclosure>
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
-                  <DisclosureButton className="group flex w-full items-center justify-between">
-                    <span
-                        className="text-start font-bold group-data-[hover]:text-gray-500/80">
-                        Что если сайт перестанет работать?
-                    </span>
-                    <ChevronDownIcon className="size-5 "/>
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 font-normal">
-                    Мы даем гарантию на наши услуги в течение 6 месяцев с момента передачи заказчику. Если сайт
-                    перестает корректно функционировать вследствие ошибки наших программистов — устраняем бесплатно.
-                  </DisclosurePanel>
-                </Disclosure>
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
-                  <DisclosureButton className="group flex w-full items-center justify-between">
-                    <span
-                        className="text-start font-bold group-data-[hover]:text-gray-500/80">
-                        Насколько сложно добавлять информацию на сайт?
-                    </span>
-                    <ChevronDownIcon className="size-5 "/>
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 font-normal">
-                    Для исправления текстов, добавления новых услуг или продуктов, а также новых страниц и разделов не
-                    требуется профессиональная подготовка. Сайт будет работать на современной CMS-системе 1С-Битрикс —
-                    удобной и интуитивно понятной для заказчика.
-                  </DisclosurePanel>
-                </Disclosure>
-              </div>
-            </div>
-          </div>
         </div>
 
         <CallBlock/>
