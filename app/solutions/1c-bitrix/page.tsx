@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
 import CallBlock from "@/components/CallBlock";
 import ShortForm from "@/components/shortForm";
-import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/react";
 import React from "react";
 import Link from "next/link";
 import ShortFormFW from "@/components/shortFormFW";
+import Image from 'next/image'
+import coverImage from '../../../public/static/images/1c-bitrix.png'
 
 export async function generateMetadata({
   params,
@@ -60,7 +61,7 @@ export default function Page() {
           </div>
           <div
               className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
-            <img className="mb-4 w-full max-h-72 sm:max-h-80 lg:max-h-96" src={'/static/images/1c-bitrix.png'}></img>
+            <Image className="mb-4 w-full max-h-72 sm:max-h-80 lg:max-h-96" src={coverImage} alt={'1С-Битрикс: Управление сайтом'}/>
           </div>
         </header>
         <div className="max-w-none py-10">

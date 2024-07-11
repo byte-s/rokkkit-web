@@ -1,12 +1,10 @@
 import { Metadata } from 'next';
 import CallBlock from "@/components/CallBlock";
 import ShortForm from "@/components/shortForm";
-import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/react";
 import React from "react";
-import Link from "next/link";
-import ShortFormFW from "@/components/shortFormFW";
 import {List} from "flowbite-react";
-import ShortFormInvert from "@/components/shortFormInvert";
+import Image from 'next/image'
+import coverImage from '../../../public/static/images/pack.webp'
 
 export async function generateMetadata({
   params,
@@ -60,7 +58,7 @@ export default function Page() {
           </div>
           <div
               className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
-            <img className="mb-4 w-full max-h-80 lg:max-h-96" src={'/static/images/pack.webp'}></img>
+            <Image className="mb-4 w-full max-h-80 lg:max-h-96" alt={'Пакетное внедрение CRM Битрикс24'} src={coverImage}></Image>
           </div>
         </header>
         <div className="max-w-none py-10">

@@ -2,14 +2,13 @@ import { Metadata } from 'next';
 import CallBlock from "@/components/CallBlock";
 import ShortForm from "@/components/shortForm";
 import React from "react";
-import Link from "next/link";
-import ShortFormFW from "@/components/shortFormFW";
 import {List} from "flowbite-react";
-import ShortFormInvert from "@/components/shortFormInvert";
 import {IoCheckbox, IoRemove} from "react-icons/io5";
 import styles from "@/components/styles.module.css";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 import {ChevronDownIcon} from "@heroicons/react/20/solid";
+import Image from 'next/image'
+import coverImage from '../../../public/static/images/corporate.webp'
 
 export async function generateMetadata({
   params,
@@ -53,8 +52,8 @@ export default function Page() {
       <>
         <header className='grid lg:grid-cols-2 lg:grid-rows-1 items-center justify-between my-8 py-20'>
           <div>
-            <h1 className='text-5xl mb-4 font-black'>
-              Создание корпоративного сайта
+            <h1 className='text-5xl mb-4 hyphens-manual font-black'>
+              Создание корпоратив&shy;ного сайта
             </h1>
             <h2 className='text-xl mb-4'>
               Это ключевой инструмент для привлечения новых клиентов, укрепления доверия и улучшения общения. Мы
@@ -64,7 +63,7 @@ export default function Page() {
           </div>
           <div
               className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
-            <img className="mb-4 w-full max-h-80 lg:max-h-96" src={'/static/images/corporate.webp'}></img>
+            <Image className="mb-4 w-full max-h-80 lg:max-h-96" alt={'Создание корпоративного сайта'} src={coverImage}></Image>
           </div>
         </header>
 
@@ -416,6 +415,7 @@ export default function Page() {
             </li>
           </ul>
         </div>
+
         <div className="max-w-none py-10">
           <div className="xl:col-span-3 mt-5 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0">
             <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4">

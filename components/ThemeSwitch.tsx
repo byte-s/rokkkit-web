@@ -54,13 +54,13 @@ const ThemeSwitch = () => {
 
   return (
       <div className="mr-5">
-        <div className="dropdown dropdown-hover">
+        <div className="dropdown dropdown-hover dropdown-end">
           <div tabIndex={0} role="button"
-               className="mt-1.5 focus:outline-none group sm:flex hidden font-medium hover:scale-105 transition duration-300 items-center gap-1">
+               className="mt-1.5 focus:outline-none group font-medium hover:scale-105 transition duration-300 items-center gap-1">
             {resolvedTheme === 'dark' ? <Moon/> : <Sun/>}
           </div>
           <ul tabIndex={0}
-              className="dropdown-content menu bg-base-100 dark:bg-gray-900 rounded-box z-[1] w-52 p-2 shadow dark:shadow-gray-950">
+              className="dropdown-content menu bg-base-100 dark:bg-gray-900 rounded-box z-[1] w-40 p-2 shadow dark:shadow-gray-950">
 
             <RadioGroup value={theme} onChange={setTheme}>
                 <RadioGroup.Option value="light">

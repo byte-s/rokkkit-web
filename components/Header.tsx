@@ -18,9 +18,9 @@ const Header = () => {
               <RokkitLogo kind="rokkit" href='/'/>
           </div>
           <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
-              <div className="dropdown dropdown-hover">
+              <div className="dropdown dropdown-hover sm:inline-block hidden dropdown-end">
                   <div tabIndex={0} role="button"
-                       className="focus:outline-none group sm:flex hidden font-medium hover:scale-105 transition duration-300 items-center gap-1">
+                       className="focus:outline-none group inline-flex font-medium hover:scale-105 transition duration-300 items-center gap-1">
                       Решения
                       <ChevronDownIcon className={clsx('size-5')}/>
                   </div>
@@ -37,9 +37,9 @@ const Header = () => {
                       </li>
                   </ul>
               </div>
-              <div className="dropdown dropdown-hover">
+              <div className="dropdown dropdown-hover sm:inline-block hidden dropdown-end">
                   <div tabIndex={0} role="button"
-                       className="focus:outline-none group sm:flex hidden font-medium hover:scale-105 transition duration-300 items-center gap-1">
+                       className="focus:outline-none group inline-flex font-medium hover:scale-105 transition duration-300 items-center gap-1">
                       Услуги
                       <ChevronDownIcon className={clsx('size-5')}/>
                   </div>

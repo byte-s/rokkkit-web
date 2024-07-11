@@ -2,14 +2,11 @@ import { Metadata } from 'next';
 import CallBlock from "@/components/CallBlock";
 import ShortForm from "@/components/shortForm";
 import React from "react";
-import Link from "next/link";
-import ShortFormFW from "@/components/shortFormFW";
 import {List} from "flowbite-react";
-import ShortFormInvert from "@/components/shortFormInvert";
-import {IoCheckbox, IoRemove} from "react-icons/io5";
+import {IoRemove} from "react-icons/io5";
 import styles from "@/components/styles.module.css";
-import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
-import {ChevronDownIcon} from "@heroicons/react/20/solid";
+import Image from 'next/image'
+import coverImage from '../../../public/static/images/landing.webp'
 
 export async function generateMetadata({
   params,
@@ -64,7 +61,7 @@ export default function Page() {
           </div>
           <div
               className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
-            <img className="mb-4 w-full max-h-80 lg:max-h-96" src={'/static/images/landing.webp'}></img>
+            <Image className="mb-4 w-full max-h-80 lg:max-h-96" alt={'Разработка лендинга под ключ'} src={coverImage}></Image>
           </div>
         </header>
 

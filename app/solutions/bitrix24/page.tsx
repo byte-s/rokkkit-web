@@ -5,6 +5,8 @@ import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/react";
 import React from "react";
 import Link from "next/link";
 import ShortFormFW from "@/components/shortFormFW";
+import Image from 'next/image'
+import coverImage from '../../../public/static/images/bitrix-24.png'
 
 export async function generateMetadata({
   params,
@@ -59,7 +61,7 @@ export default function Page() {
           </div>
           <div
               className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
-            <img className="mb-4 w-full" src={'/static/images/bitrix-24.png'}></img>
+            <Image className="mb-4 w-full" src={coverImage} alt={'Битрикс24'}/>
           </div>
         </header>
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">

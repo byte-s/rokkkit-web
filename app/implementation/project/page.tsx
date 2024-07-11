@@ -8,6 +8,8 @@ import {List} from "flowbite-react";
 import ShortFormInvert from "@/components/shortFormInvert";
 import {IoCheckbox} from "react-icons/io5";
 import styles from "@/components/styles.module.css";
+import Image from 'next/image'
+import coverImage from '../../../public/static/images/project.webp'
 
 export async function generateMetadata({
   params,
@@ -61,7 +63,7 @@ export default function Page() {
           </div>
           <div
               className='grid lg:row-end-auto row-end-1 lg:justify-end lg:justify-items-end justify-start justify-items-start'>
-            <img className="mb-4 w-full max-h-80 lg:max-h-96" src={'/static/images/project.webp'}></img>
+            <Image className="mb-4 w-full max-h-80 lg:max-h-96" alt={'Проектное внедрение Битрикс24'} src={coverImage}></Image>
           </div>
         </header>
         <div className="max-w-none py-10">

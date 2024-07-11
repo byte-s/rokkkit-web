@@ -1,9 +1,6 @@
-import styles from '@/components/styles.module.css'
-import ServiceIcon from "@/components/service-icons";
+import styles from '@/components/styles.module.css';
 import CallBlock from "@/components/CallBlock";
 import Link from "next/link";
-
-const MAX_DISPLAY = 5
 
 export default function Home() {
   return (
