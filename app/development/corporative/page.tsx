@@ -436,7 +436,7 @@ export default function Page() {
                     контентом, подробно рассказывающим о достоинствах вашего продукта.
                   </DisclosurePanel>
                 </Disclosure>
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
+                <Disclosure as="div" className="py-2" defaultOpen={false}>
                   <DisclosureButton className="group flex w-full items-center justify-between">
                     <span
                         className="text-start font-bold group-data-[hover]:text-gray-500/80">
@@ -449,7 +449,7 @@ export default function Page() {
                     структура проектируется совместно с SEO-специалистами.
                   </DisclosurePanel>
                 </Disclosure>
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
+                <Disclosure as="div" className="py-2" defaultOpen={false}>
                   <DisclosureButton className="group flex w-full items-center justify-between">
                     <span
                         className="text-start font-bold group-data-[hover]:text-gray-500/80">
@@ -462,7 +462,7 @@ export default function Page() {
                     портал может занимать до полугода, небольшой — 2 недели.
                   </DisclosurePanel>
                 </Disclosure>
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
+                <Disclosure as="div" className="py-2" defaultOpen={false}>
                   <DisclosureButton className="group flex w-full items-center justify-between">
                     <span
                         className="text-start font-bold group-data-[hover]:text-gray-500/80">
@@ -475,7 +475,7 @@ export default function Page() {
                     перестает корректно функционировать вследствие ошибки наших программистов — устраняем бесплатно.
                   </DisclosurePanel>
                 </Disclosure>
-                <Disclosure as="div" className="py-2" defaultOpen={true}>
+                <Disclosure as="div" className="py-2" defaultOpen={false}>
                   <DisclosureButton className="group flex w-full items-center justify-between">
                     <span
                         className="text-start font-bold group-data-[hover]:text-gray-500/80">

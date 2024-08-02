@@ -16,7 +16,7 @@ const projectsData: Project[] = [
     title: 'Сайт для компании «Проект ОВК»',
     description: 'Проект ОВК работает с 2008 года. За это время создано более 900 систем микроклимата и большинство из них на технической поддержке Проекта ОВК.',
     imgSrc: '/static/images/ovk.png',
-    href: '/solutions/project-ovk',
+    href: '/projects/project-ovk',
   }
 ]
 
