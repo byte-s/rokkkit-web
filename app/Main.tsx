@@ -2,7 +2,6 @@ import styles from '@/components/styles.module.css';
 import CallBlock from "@/components/CallBlock";
 import Link from "next/link";
 import '@/components/slider.css'
-import {Blob} from "react-blob";
 
 export default function Home() {
   return (
