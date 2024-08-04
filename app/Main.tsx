@@ -1,42 +1,39 @@
 import styles from '@/components/styles.module.css';
 import CallBlock from "@/components/CallBlock";
 import Link from "next/link";
+import '@/components/slider.css'
+import {Blob} from "react-blob";
 
 export default function Home() {
   return (
       <>
-          <div className="space-y-5 mb-12 py-20 md:space-y-5 grid grid-cols-1 md:grid-cols-5 gap-8">
-              <div className="md:col-span-3">
-                  <h1 className="font-black tracking-tight text-gray-900 dark:text-gray-100 leading-8 sm:leading-10 text-4xl sm:text-5xl md:text-6xl md:leading-14">
+          <div className="space-y-5 mb-12 py-20 md:space-y-5 justify-center sm:justify-between items-center grid grid-cols-1 sm:grid-cols-5 gap-y-8 sm:gap-4">
+              <div className="col-span-3">
+                  <div
+                      className="mb-2 font-black tracking-tight text-gray-900 dark:text-gray-100 leading-8 sm:leading-10 text-4xl sm:text-5xl md:text-6xl md:leading-14">
                       Улучшаем бизнес с помощью
-                      <span
-                          className="text-warning type-services"> </span>
-                      <span className="hidden">
-                             уникального плана роста, современной разработки, включая внедрение CRM систем&
-                        </span>
-                  </h1>
-                  <a href='/contacts'
-                     className={styles.mainLink + ` hover:animate-shake text-lg leading-9 text-gray-500 dark:text-gray-400`}>
-                      Свяжитесь с нами
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 42 42"
-                           fill="currentColor" className="h-7 w-7 text-gray-500 dark:text-gray-400">
-                          <path clipRule="evenodd"
-                                d="M2.625 21C2.625 20.6519 2.76328 20.3181 3.00942 20.0719C3.25556 19.8258 3.5894 19.6875 3.9375 19.6875H34.8941L26.6332 11.4292C26.3868 11.1828 26.2483 10.8485 26.2483 10.5C26.2483 10.1515 26.3868 9.8172 26.6332 9.57074C26.8797 9.32429 27.214 9.18584 27.5625 9.18584C27.911 9.18584 28.2453 9.32429 28.4918 9.57074L38.9918 20.0707C39.114 20.1927 39.211 20.3375 39.2771 20.497C39.3433 20.6564 39.3773 20.8274 39.3773 21C39.3773 21.1726 39.3433 21.3436 39.2771 21.503C39.211 21.6625 39.114 21.8073 38.9918 21.9292L28.4918 32.4292C28.2453 32.6757 27.911 32.8142 27.5625 32.8142C27.214 32.8142 26.8797 32.6757 26.6332 32.4292C26.3868 32.1828 26.2483 31.8485 26.2483 31.5C26.2483 31.1515 26.3868 30.8172 26.6332 30.5707L34.8941 22.3125H3.9375C3.5894 22.3125 3.25556 22.1742 3.00942 21.9281C2.76328 21.6819 2.625 21.3481 2.625 21Z"/>
-                      </svg>
-                  </a>
+                    <span
+                      className="ml-1 inline-flex flex-col h-8 sm:h-12 md:h-14 overflow-hidden">
+                        <ul className="rounded-lg block animate-text-slide text-left [&_li]:block">
+                            <li className={'text-[#FB3BA9]'}>WEB</li>
+                            <li className={'text-[#F9EB65]'}>CRM</li>
+                            <li className={'text-[#9E63FF]'}>AI</li>
+                            <li className={'text-[#00EC18]'}>UX</li>
+                            <li className={'text-[#00EC18]'}>UI</li>
+                            <li className={'text-[#FB3BA9]'} aria-hidden="true">WEB</li>
+                        </ul>
+                    </span>
+                  </div>
+                  <span className="mt-4 md:text-2xl text-xl">Создаем цифровые решения для бизнеса, e-commerce и корпораций</span>
               </div>
-              <div className="md:col-span-2 !mt-0">
-                  <div className="mockup-code bg-gray-900">
-                      <pre data-prefix="1"><code><b className="text-gray-100">We develop and implement</b></code></pre>
-                      <pre data-prefix=" "><code><b className="text-gray-100">software products:</b></code></pre>
-                      <pre data-prefix="2" className="text-error"><code>web</code></pre>
-                      <pre data-prefix="3" className="text-error"><code>e-commerce</code></pre>
-                      <pre data-prefix="4" className="text-error"><code>ui/ux</code></pre>
-                      <pre data-prefix="5" className="text-warning"><code>mobile</code></pre>
-                      <pre data-prefix="6" className="text-success"><code>crm</code></pre>
-                      <pre data-prefix="7" className="text-success"><code>1c-bitrix</code></pre>
-                      <pre data-prefix="8" className="text-success"><code>bitrix-24</code></pre>
-                      <pre data-prefix="9" className="text-error"><code>telegram-bots</code></pre>
+              <div className="col-span-2 !mt-0 grid !justify-center">
+                  <div className="square twitter md:size-[250px] size-[150px]">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <div className="md:text-xl text-lg content text-black dark:text-white dark:hover:text-black hover:text-white">
+                          <a className='border-white px-4 py-2 md:px-6 md:py-3 border-2 dark:border-gray-950' href="/contacts">Свяжитесь с нами</a>
+                      </div>
                   </div>
               </div>
           </div>
@@ -45,7 +42,7 @@ export default function Home() {
               <div
                   className="sm:text-5xl text-4xl font-black hyphens-manual leading-8 sm:leading-10 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-14">
                   Мы команда разработчи&shy;ков, специализи&shy;ру&shy;ющихся на <span
-                  className="text-red-500">web-решениях,</span> направлен&shy;ных помочь нашим клиентам добиться успеха.
+                  className="text-[#FB3BA9]">web-решениях,</span> направлен&shy;ных помочь нашим клиентам добиться успеха.
               </div>
           </div>
 
@@ -63,27 +60,212 @@ export default function Home() {
                       <div
                           className={styles.card + ` hover:scale-105 transition duration-300 flex flex-col justify-between bg-gray-100 dark:bg-gray-900 !p-8`}>
                           <div>
-                              <svg className="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                   color="currentColor" fill="none">
+                              <svg width="139" height="128" viewBox="0 0 127 128" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
                                   <path
-                                      d="M14 2H10C6.72077 2 5.08116 2 3.91891 2.81382C3.48891 3.1149 3.1149 3.48891 2.81382 3.91891C2 5.08116 2 6.72077 2 10C2 13.2792 2 14.9188 2.81382 16.0811C3.1149 16.5111 3.48891 16.8851 3.91891 17.1862C5.08116 18 6.72077 18 10 18H14C17.2792 18 18.9188 18 20.0811 17.1862C20.5111 16.8851 20.8851 16.5111 21.1862 16.0811C22 14.9188 22 13.2792 22 10C22 6.72077 22 5.08116 21.1862 3.91891C20.8851 3.48891 20.5111 3.1149 20.0811 2.81382C18.9188 2 17.2792 2 14 2Z"
-                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                  <path
-                                      d="M16 8L17.2265 9.05719C17.7422 9.50163 18 9.72386 18 10C18 10.2761 17.7422 10.4984 17.2265 10.9428L16 12"
-                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                                  <path
-                                      d="M8 8L6.77346 9.05719C6.25782 9.50163 6 9.72386 6 10C6 10.2761 6.25782 10.4984 6.77346 10.9428L8 12"
-                                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                                  <path d="M13 7L11 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round"/>
-                                  <path d="M14.6557 22L14.2369 21.5811C13.2926 20.6369 13.0585 19.1944 13.6557 18"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                  <path d="M9.00051 22L9.41937 21.5811C10.3636 20.6369 10.5977 19.1944 10.0005 18"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                  <path d="M7 22H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                      d="M0.171875 64.0346C0.171875 98.9186 28.4492 127.197 63.3332 127.197C98.2159 127.197 126.496 98.9186 126.496 64.0346C126.496 29.1506 98.2159 0.873278 63.3332 0.873278C28.4492 0.873278 0.171875 29.1506 0.171875 64.0346Z"
+                                      fill="url(#paint0_radial_1440_14424)"/>
+                                  <mask id="mask0_1440_14424" maskUnits="userSpaceOnUse"
+                                        x="0" y="0" width="127" height="128">
+                                      <path
+                                          d="M0.171875 64.0346C0.171875 98.9186 28.4492 127.197 63.3332 127.197C98.2159 127.197 126.496 98.9186 126.496 64.0346C126.496 29.1506 98.2159 0.873278 63.3332 0.873278C28.4492 0.873278 0.171875 29.1506 0.171875 64.0346Z"
+                                          fill="white"/>
+                                  </mask>
+                                  <g mask="url(#mask0_1440_14424)">
+                                      <mask id="mask1_1440_14424" maskUnits="userSpaceOnUse"
+                                            x="-43961" y="-43282" width="87381" height="87381">
+                                          <path d="M-43960.7 -43281.7H43419.3V44098.3H-43960.7V-43281.7Z"
+                                                fill="url(#paint1_radial_1440_14424)"/>
+                                      </mask>
+                                      <g mask="url(#mask1_1440_14424)">
+                                          <path
+                                              d="M0.171875 64.0327C0.171875 98.9167 28.4492 127.195 63.3332 127.195C98.2159 127.195 126.496 98.9167 126.496 64.0327C126.496 29.1487 98.2159 0.871325 63.3332 0.871325C28.4492 0.871325 0.171875 29.1487 0.171875 64.0327Z"
+                                              fill="url(#paint2_radial_1440_14424)"/>
+                                      </g>
+                                  </g>
+                                  <mask id="mask2_1440_14424"  maskUnits="userSpaceOnUse"
+                                        x="72" y="13" width="50" height="109">
+                                      <path
+                                          d="M117.516 62.8745C117.516 91.0225 98.3449 114.686 72.3516 121.542C100.214 117.208 121.538 93.1132 121.538 64.0345C121.538 42.1491 109.453 23.0931 91.5969 13.1531C107.262 24.1251 117.516 42.2972 117.516 62.8745Z"
+                                          fill="white"/>
+                                  </mask>
+                                  <g mask="url(#mask2_1440_14424)">
+                                      <mask id="mask3_1440_14424" maskUnits="userSpaceOnUse"
+                                            x="-43961" y="-43282" width="87381" height="87381">
+                                          <path d="M-43960.7 -43281.7H43419.3V44098.3H-43960.7V-43281.7Z"
+                                                fill="url(#paint3_radial_1440_14424)"/>
+                                      </mask>
+                                      <g mask="url(#mask3_1440_14424)">
+                                          <path
+                                              d="M117.516 62.875C117.516 91.023 98.3449 114.687 72.3516 121.543C100.214 117.208 121.538 93.1136 121.538 64.035C121.538 42.1496 109.453 23.0936 91.5969 13.1536C107.262 24.1256 117.516 42.2976 117.516 62.875Z"
+                                              fill="url(#paint4_radial_1440_14424)"/>
+                                      </g>
+                                  </g>
+                                  <mask id="mask4_1440_14424" maskUnits="userSpaceOnUse"
+                                        x="63" y="14" width="49" height="44">
+                                      <path
+                                          d="M63.7394 21.9424C61.3047 31.101 69.982 44.7304 83.122 52.381C96.2607 60.033 108.887 58.809 111.322 49.6504C113.758 40.4904 105.079 26.8624 91.9407 19.2104C86.1407 15.833 80.442 14.185 75.674 14.185C69.6407 14.185 65.1007 16.825 63.7394 21.9424Z"
+                                          fill="white"/>
+                                  </mask>
+                                  <g mask="url(#mask4_1440_14424)">
+                                      <mask id="mask5_1440_14424" maskUnits="userSpaceOnUse"
+                                            x="-43961" y="-43282" width="87381" height="87381">
+                                          <path d="M-43960.7 -43281.7H43419.3V44098.3H-43960.7V-43281.7Z"
+                                                fill="url(#paint5_radial_1440_14424)"/>
+                                      </mask>
+                                      <g mask="url(#mask5_1440_14424)">
+                                          <path
+                                              d="M63.7394 21.9419C61.3047 31.1005 69.982 44.7299 83.122 52.3806C96.2607 60.0326 108.887 58.8086 111.322 49.6499C113.758 40.4899 105.079 26.8619 91.9407 19.2099C86.1407 15.8325 80.442 14.1846 75.674 14.1846C69.6407 14.1846 65.1007 16.8245 63.7394 21.9419Z"
+                                              fill="url(#paint6_radial_1440_14424)"/>
+                                      </g>
+                                  </g>
+                                  <mask id="mask6_1440_14424" maskUnits="userSpaceOnUse"
+                                        x="53" y="6" width="71" height="72">
+                                      <path
+                                          d="M55.0678 10.7571C47.6451 22.4611 68.7731 39.2171 79.0251 50.4451C89.2758 61.6758 113.973 85.9784 121.396 74.2744C128.817 62.5691 116.413 34.1611 106.16 22.9318C98.8038 14.8758 79.5238 6.08646 66.4745 6.0878C61.3385 6.0878 57.1638 7.45044 55.0678 10.7571Z"
+                                          fill="white"/>
+                                  </mask>
+                                  <g mask="url(#mask6_1440_14424)">
+                                      <mask id="mask7_1440_14424" maskUnits="userSpaceOnUse"
+                                            x="-43961" y="-43282" width="87381" height="87381">
+                                          <path d="M-43960.7 -43281.7H43419.3V44098.3H-43960.7V-43281.7Z"
+                                                fill="url(#paint7_radial_1440_14424)"/>
+                                      </mask>
+                                      <g mask="url(#mask7_1440_14424)">
+                                          <path
+                                              d="M55.0678 10.7559C47.6451 22.4599 68.7731 39.2159 79.0251 50.4439C89.2758 61.6746 113.973 85.9772 121.396 74.2732C128.817 62.5679 116.413 34.1599 106.16 22.9306C98.8038 14.8746 79.5238 6.08524 66.4745 6.08658C61.3385 6.08658 57.1638 7.44922 55.0678 10.7559Z"
+                                              fill="url(#paint8_radial_1440_14424)"/>
+                                      </g>
+                                  </g>
+                                  <mask id="mask8_1440_14424" maskUnits="userSpaceOnUse"
+                                        x="4" y="49" width="38" height="43">
+                                      <path
+                                          d="M6.96678 50.3106C5.63611 54.7052 4.91211 59.3612 4.91211 64.1879C4.91211 73.9092 7.8161 82.9492 12.7908 90.5026C13.1708 91.0799 13.9494 91.2452 14.5428 90.8892L40.4974 75.2719C41.1534 74.8772 41.3281 73.9999 40.8601 73.3932C38.8921 70.8439 37.7148 67.6572 37.7148 64.1879C37.7148 62.3439 38.0561 60.5826 38.6641 58.9519C38.9281 58.2439 38.5148 57.4666 37.7868 57.2719L8.54277 49.4466C8.43077 49.4159 8.31744 49.4026 8.20544 49.4026C7.65078 49.4012 7.13344 49.7572 6.96678 50.3106Z"
+                                          fill="white"/>
+                                  </mask>
+                                  <g mask="url(#mask8_1440_14424)">
+                                      <mask id="mask9_1440_14424" maskUnits="userSpaceOnUse"
+                                            x="-43961" y="-43282" width="87381" height="87381">
+                                          <path d="M-43960.7 -43281.7H43419.3V44098.3H-43960.7V-43281.7Z"
+                                                fill="url(#paint9_radial_1440_14424)"/>
+                                      </mask>
+                                      <g mask="url(#mask9_1440_14424)">
+                                          <path
+                                              d="M6.96678 50.3086C5.63611 54.7033 4.91211 59.3593 4.91211 64.1859C4.91211 73.9073 7.8161 82.9473 12.7908 90.5006C13.1708 91.0779 13.9494 91.2433 14.5428 90.8873L40.4974 75.2699C41.1534 74.8753 41.3281 73.9979 40.8601 73.3913C38.8921 70.8419 37.7148 67.6553 37.7148 64.1859C37.7148 62.3419 38.0561 60.5806 38.6641 58.9499C38.9281 58.2419 38.5148 57.4646 37.7868 57.27L8.54277 49.4446C8.43077 49.4139 8.31744 49.4006 8.20544 49.4006C7.65078 49.3993 7.13344 49.7553 6.96678 50.3086Z"
+                                              fill="url(#paint10_radial_1440_14424)"/>
+                                      </g>
+                                  </g>
+                                  <mask id="mask10_1440_14424" maskUnits="userSpaceOnUse"
+                                        x="73" y="71" width="34" height="34">
+                                      <path
+                                          d="M80.7937 73.5999C80.0324 75.2786 78.8857 76.8106 77.3617 78.0573C76.8644 78.4639 76.3444 78.8239 75.8071 79.1399C74.0311 80.1826 73.2417 82.3279 74.0897 84.2053L81.9831 101.697C82.8991 103.725 85.3257 104.604 87.3137 103.597C89.803 102.336 92.1964 100.792 94.447 98.9519C99.791 94.5813 103.686 89.0973 106.079 83.1093C106.906 81.0439 105.85 78.7013 103.755 77.9506L85.6084 71.4559C85.1897 71.3066 84.7657 71.2346 84.3497 71.2346C82.8524 71.2346 81.4537 72.1479 80.7937 73.5999Z"
+                                          fill="white"/>
+                                  </mask>
+                                  <g mask="url(#mask10_1440_14424)">
+                                      <mask id="mask11_1440_14424"
+                                            maskUnits="userSpaceOnUse" x="-43961" y="-43282" width="87381"
+                                            height="87381">
+                                          <path d="M-43960.7 -43281.7H43419.3V44098.3H-43960.7V-43281.7Z"
+                                                fill="url(#paint11_radial_1440_14424)"/>
+                                      </mask>
+                                      <g mask="url(#mask11_1440_14424)">
+                                          <path
+                                              d="M80.7937 73.5999C80.0324 75.2786 78.8857 76.8106 77.3617 78.0573C76.8644 78.4639 76.3444 78.8239 75.8071 79.1399C74.0311 80.1826 73.2417 82.3279 74.0897 84.2053L81.9831 101.697C82.8991 103.725 85.3257 104.604 87.3137 103.597C89.803 102.336 92.1964 100.792 94.447 98.9519C99.791 94.5813 103.686 89.0973 106.079 83.1093C106.906 81.0439 105.85 78.7013 103.755 77.9506L85.6084 71.4559C85.1897 71.3066 84.7657 71.2346 84.3497 71.2346C82.8524 71.2346 81.4537 72.1479 80.7937 73.5999Z"
+                                              fill="url(#paint12_radial_1440_14424)"/>
+                                      </g>
+                                  </g>
+                                  <defs>
+                                      <radialGradient id="paint0_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(36.4767 123.186) rotate(45) scale(132.218)">
+                                          <stop stop-color="#9724BA"/>
+                                          <stop offset="0.180851" stop-color="#D324AC"/>
+                                          <stop offset="0.335106" stop-color="#FB3BA9"/>
+                                          <stop offset="0.550532" stop-color="#FF85A3"/>
+                                          <stop offset="0.861702" stop-color="#F8F95C"/>
+                                          <stop offset="1" stop-color="#F9F9F9"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint1_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(62.5058 120.548) rotate(72.0928) scale(138.528 191.524)">
+                                          <stop stop-color="white"/>
+                                          <stop offset="0.175532" stop-color="white"/>
+                                          <stop offset="0.505319" stop-color="white" stop-opacity="0"/>
+                                          <stop offset="0.81383" stop-color="white" stop-opacity="0"/>
+                                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint2_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(62.5067 120.552) rotate(72.0928) scale(138.528 191.525)">
+                                          <stop stop-color="#9724BA"/>
+                                          <stop offset="0.175532" stop-color="#9724BA"/>
+                                          <stop offset="0.505319" stop-color="#D324AC"/>
+                                          <stop offset="0.81383" stop-color="#FB3BA9"/>
+                                          <stop offset="1" stop-color="#FB3BA9"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint3_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(2.87854 -5.16469) rotate(59.5407) scale(157.161)">
+                                          <stop stop-color="white"/>
+                                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint4_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(2.87474 -5.16288) rotate(59.5407) scale(157.161 157.161)">
+                                          <stop stop-color="#F9F9F9"/>
+                                          <stop offset="1" stop-color="white"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint5_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(87.4667 35.7191) rotate(30.4466) scale(24.9695 13.294)">
+                                          <stop stop-color="white"/>
+                                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint6_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(87.4629 35.7256) rotate(30.4466) scale(24.9695 13.294)">
+                                          <stop stop-color="#F9F9F9"/>
+                                          <stop offset="1" stop-color="white"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint7_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(149.123 0.315433) rotate(45) scale(81.536)">
+                                          <stop stop-color="white"/>
+                                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint8_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(149.122 0.318073) rotate(45) scale(81.536)">
+                                          <stop stop-color="#F9F9F9"/>
+                                          <stop offset="1" stop-color="white"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint9_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(76.8328 -145.008) rotate(78.3162) scale(232.394)">
+                                          <stop stop-color="white"/>
+                                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint10_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(76.8298 -145.007) rotate(78.3162) scale(232.394 232.394)">
+                                          <stop stop-color="#F9F9F9"/>
+                                          <stop offset="1" stop-color="white"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint11_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(472.402 69.8981) rotate(24.3213) scale(402.083)">
+                                          <stop stop-color="white"/>
+                                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint12_radial_1440_14424" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(472.399 69.9012) rotate(24.3213) scale(402.083 402.083)">
+                                          <stop stop-color="#F9F9F9"/>
+                                          <stop offset="1" stop-color="white"/>
+                                      </radialGradient>
+                                  </defs>
                               </svg>
+
                               <h4 className='font-bold text-xl pt-6 pb-2'>Сайты и веб-приложения</h4>
                               <div
                                   className={styles.cardProse + ` text-gray-800 dark:text-gray-300 pb-2 max-w-none xl:col-span-2`}>
@@ -103,17 +285,110 @@ export default function Home() {
                       <div
                           className={styles.card + ` hover:scale-105 flex flex-col justify-between transition duration-300 bg-gray-100 dark:bg-gray-900 !p-8`}>
                           <div>
-                              <svg className="size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                                   color="currentColor" fill="none">
-                                  <circle cx="8.5" cy="10.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-                                  <circle cx="14.5" cy="15.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-                                  <circle cx="18.5" cy="7.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
-                                  <path d="M15.4341 14.2963L18 9M9.58251 11.5684L13.2038 14.2963M3 19L7.58957 11.8792"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round"/>
-                                  <path d="M20 21H9C5.70017 21 4.05025 21 3.02513 19.9749C2 18.9497 2 17.2998 2 14V3"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                              <svg width="139" height="128" viewBox="0 0 139 160" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                      d="M53.221 2.77061C52.7503 3.02794 52.297 3.30793 51.8543 3.6026C51.4677 3.85193 51.0957 4.11994 50.7277 4.39327L14.5103 26.1119C-4.57234 36.4906 -4.07498 74.2613 15.6223 110.476C35.3197 146.689 66.7557 167.633 85.8383 157.253C86.697 156.785 97.0117 151.896 97.7877 151.316L124.549 133.912C125.245 133.535 125.906 133.109 126.549 132.661L126.678 132.581C126.678 132.581 126.648 132.589 126.642 132.591C132.425 128.503 136.09 121.577 137.656 112.837C137.666 112.776 137.68 112.717 137.69 112.657C137.812 111.967 137.914 111.263 138.009 110.551C138.028 110.416 138.048 110.285 138.065 110.152C138.149 109.488 138.216 108.812 138.277 108.131C138.293 107.937 138.316 107.748 138.33 107.555C138.382 106.909 138.418 106.253 138.45 105.593C138.461 105.353 138.476 105.115 138.486 104.872C138.509 104.241 138.52 103.601 138.524 102.957C138.526 102.676 138.532 102.393 138.53 102.109C138.528 101.489 138.514 100.864 138.497 100.235C138.486 99.9119 138.478 99.5906 138.464 99.2666C138.438 98.6573 138.404 98.0439 138.364 97.4266C138.341 97.0719 138.317 96.7146 138.289 96.3573C138.242 95.7559 138.186 95.1519 138.125 94.5426C138.088 94.1559 138.046 93.7693 138.002 93.3773C137.934 92.7866 137.861 92.1906 137.781 91.5919C137.725 91.1773 137.666 90.7599 137.605 90.3399C137.518 89.7559 137.428 89.1693 137.329 88.5786C137.256 88.1359 137.177 87.6906 137.097 87.2453C136.993 86.6679 136.885 86.0906 136.769 85.5079C136.677 85.0413 136.578 84.5719 136.478 84.1013C136.357 83.5306 136.233 82.9613 136.101 82.3853C135.989 81.8946 135.869 81.4013 135.749 80.9093C135.612 80.3466 135.473 79.7853 135.326 79.2199C135.192 78.7053 135.049 78.1893 134.908 77.6719C134.754 77.1199 134.602 76.5693 134.441 76.0133C134.286 75.4786 134.118 74.9399 133.954 74.4013C133.788 73.8586 133.624 73.3159 133.446 72.7706C133.268 72.2159 133.078 71.6573 132.89 71.0999C132.71 70.5653 132.533 70.0346 132.344 69.4986C132.142 68.9253 131.928 68.3493 131.716 67.7733C131.522 67.2493 131.333 66.7253 131.13 66.1999C130.905 65.6093 130.665 65.0173 130.429 64.4253C130.222 63.9106 130.022 63.3986 129.809 62.8839C129.554 62.2666 129.284 61.6493 129.017 61.0319C128.805 60.5413 128.6 60.0506 128.381 59.5599C128.088 58.9013 127.778 58.2426 127.472 57.5853C127.261 57.1306 127.058 56.6773 126.841 56.2226C126.489 55.4853 126.118 54.7479 125.752 54.0119C125.564 53.6359 125.385 53.2599 125.193 52.8853C124.625 51.7719 124.04 50.6599 123.437 49.5506C107.156 19.6146 82.8503 0.114614 64.1343 0.113281C60.2077 0.113281 56.5303 0.970609 53.221 2.77061ZM57.7837 85.2586C46.409 64.3466 41.537 43.0453 43.3463 27.4746C58.7237 32.7599 76.3703 49.5666 89.1557 73.0773C100.557 94.0359 105.408 115.369 103.556 130.943C88.189 125.617 70.553 108.737 57.7837 85.2586Z"
+                                      fill="url(#paint0_linear_1440_14422)"/>
+                                  <mask id="mask0_1440_14422" maskUnits="userSpaceOnUse"
+                                        x="4" y="19" width="100" height="137">
+                                      <path
+                                          d="M16.641 29.6624C16.5916 29.693 16.5423 29.7211 16.4903 29.7491C8.6783 33.9997 4.47695 44.2251 4.66629 58.5517C4.86762 73.8237 10.0516 91.5624 19.2623 108.496C28.473 125.429 40.5463 139.421 53.2583 147.889C65.1796 155.833 76.0476 157.864 83.8609 153.616C84.1636 153.449 85.573 152.765 87.3463 151.905C89.7063 150.762 94.5783 148.405 95.4756 147.881C95.4929 147.869 95.513 147.856 95.5316 147.844L103.372 142.746C97.5943 141.192 91.5729 138.384 85.4649 134.314C71.1943 124.808 57.7703 109.341 47.6649 90.7624C37.5609 72.1837 31.8716 52.5091 31.645 35.3651C31.569 29.6797 32.1063 24.4517 33.1983 19.7331L16.641 29.6624Z"
+                                          fill="white"/>
+                                  </mask>
+                                  <g mask="url(#mask0_1440_14422)">
+                                      <mask id="mask1_1440_14422" maskUnits="userSpaceOnUse"
+                                            x="-44159" y="-43469" width="87381" height="87381">
+                                          <path d="M-44158.7 -43468.7H43221.3V43911.3H-44158.7V-43468.7Z"
+                                                fill="url(#paint1_radial_1440_14422)"/>
+                                      </mask>
+                                      <g mask="url(#mask1_1440_14422)">
+                                          <path
+                                              d="M16.641 29.6619C16.5916 29.6926 16.5423 29.7206 16.4903 29.7486C8.6783 33.9992 4.47695 44.2246 4.66629 58.5512C4.86762 73.8232 10.0516 91.5619 19.2623 108.495C28.473 125.429 40.5463 139.421 53.2583 147.889C65.1796 155.833 76.0476 157.863 83.8609 153.615C84.1636 153.449 85.573 152.765 87.3463 151.905C89.7063 150.762 94.5783 148.405 95.4756 147.881C95.4929 147.869 95.513 147.855 95.5316 147.843L103.372 142.746C97.5943 141.191 91.5729 138.383 85.4649 134.314C71.1943 124.807 57.7703 109.341 47.6649 90.7619C37.5609 72.1832 31.8716 52.5086 31.645 35.3646C31.569 29.6792 32.1063 24.4512 33.1983 19.7326L16.641 29.6619Z"
+                                              fill="url(#paint2_radial_1440_14422)"/>
+                                      </g>
+                                  </g>
+                                  <mask id="mask2_1440_14422" maskUnits="userSpaceOnUse"
+                                        x="4" y="19" width="100" height="137">
+                                      <path
+                                          d="M16.641 29.6624C16.5916 29.693 16.5423 29.7211 16.4903 29.7491C8.6783 33.9997 4.47695 44.2251 4.66629 58.5517C4.86762 73.8237 10.0516 91.5624 19.2623 108.496C28.473 125.429 40.5463 139.421 53.2583 147.889C65.1796 155.833 76.0476 157.864 83.8609 153.616C84.1636 153.449 85.573 152.765 87.3463 151.905C89.7063 150.762 94.5783 148.405 95.4756 147.881C95.4929 147.869 95.513 147.856 95.5316 147.844L103.372 142.746C97.5943 141.192 91.5729 138.384 85.4649 134.314C71.1943 124.808 57.7703 109.341 47.6649 90.7624C37.5609 72.1837 31.8716 52.5091 31.645 35.3651C31.569 29.6797 32.1063 24.4517 33.1983 19.7331L16.641 29.6624Z"
+                                          fill="white"/>
+                                  </mask>
+                                  <g mask="url(#mask2_1440_14422)">
+                                      <mask id="mask3_1440_14422" maskUnits="userSpaceOnUse"
+                                            x="-44159" y="-43469" width="87381" height="87381">
+                                          <path d="M-44158.7 -43468.7H43221.3V43911.3H-44158.7V-43468.7Z"
+                                                fill="url(#paint3_radial_1440_14422)"/>
+                                      </mask>
+                                      <g mask="url(#mask3_1440_14422)">
+                                          <path
+                                              d="M16.641 29.6619C16.5916 29.6926 16.5423 29.7206 16.4903 29.7486C8.6783 33.9992 4.47695 44.2246 4.66629 58.5512C4.86762 73.8232 10.0517 91.5619 19.2623 108.495C28.473 125.429 40.5463 139.421 53.2583 147.889C65.1796 155.833 76.0476 157.863 83.8609 153.615C84.1636 153.449 85.573 152.765 87.3463 151.905C89.7063 150.762 94.5783 148.405 95.4756 147.881C95.4929 147.869 95.513 147.855 95.5316 147.843L103.372 142.746C97.5943 141.191 91.5729 138.383 85.4649 134.314C71.1943 124.807 57.7703 109.341 47.6649 90.7619C37.5609 72.1832 31.8716 52.5086 31.645 35.3646C31.569 29.6792 32.1063 24.4512 33.1983 19.7326L16.641 29.6619Z"
+                                              fill="url(#paint4_radial_1440_14422)"/>
+                                      </g>
+                                  </g>
+                                  <path
+                                      d="M53.2215 2.77051C40.0788 16.1678 43.3468 27.4745 43.3468 27.4745C58.7242 32.7598 76.3708 49.5665 89.1562 73.0758C100.556 94.0359 105.408 115.369 103.556 130.943C111.251 138.571 124.549 133.912 124.549 133.912C125.245 133.535 125.907 133.109 126.549 132.661L126.679 132.581C126.679 132.581 126.648 132.589 126.643 132.591C132.425 128.503 136.091 121.577 137.656 112.836C137.667 112.776 137.68 112.717 137.691 112.657C137.812 111.967 137.915 111.263 138.009 110.551C138.028 110.416 138.048 110.285 138.066 110.152C138.15 109.488 138.216 108.812 138.278 108.131C138.294 107.937 138.316 107.748 138.331 107.555C138.383 106.909 138.419 106.253 138.451 105.593C138.462 105.353 138.476 105.115 138.487 104.872C138.509 104.241 138.52 103.601 138.524 102.957C138.527 102.675 138.532 102.393 138.531 102.109C138.528 101.489 138.515 100.864 138.497 100.235C138.487 99.9119 138.479 99.5905 138.464 99.2665C138.439 98.6572 138.404 98.0439 138.364 97.4265C138.342 97.0719 138.318 96.7145 138.29 96.3572C138.243 95.7558 138.187 95.1518 138.125 94.5425C138.088 94.1558 138.047 93.7692 138.003 93.3772C137.935 92.7865 137.861 92.1905 137.781 91.5919C137.725 91.1772 137.667 90.7598 137.606 90.3398C137.519 89.7558 137.428 89.1692 137.33 88.5785C137.256 88.1358 137.177 87.6905 137.097 87.2452C136.993 86.6678 136.885 86.0905 136.769 85.5078C136.677 85.0412 136.579 84.5705 136.479 84.1012C136.358 83.5305 136.233 82.9612 136.101 82.3852C135.989 81.8945 135.87 81.4012 135.75 80.9092C135.612 80.3465 135.473 79.7852 135.327 79.2199C135.192 78.7052 135.049 78.1892 134.908 77.6718C134.755 77.1198 134.603 76.5692 134.441 76.0132C134.287 75.4785 134.119 74.9399 133.955 74.4012C133.788 73.8585 133.624 73.3159 133.447 72.7705C133.268 72.2145 133.079 71.6572 132.891 71.0998C132.711 70.5652 132.533 70.0345 132.344 69.4985C132.143 68.9252 131.928 68.3492 131.716 67.7732C131.523 67.2492 131.333 66.7252 131.131 66.1999C130.905 65.6092 130.666 65.0172 130.428 64.4252C130.223 63.9105 130.023 63.3985 129.809 62.8839C129.555 62.2665 129.284 61.6492 129.017 61.0319C128.805 60.5412 128.6 60.0505 128.382 59.5598C128.088 58.9012 127.779 58.2425 127.472 57.5852C127.261 57.1305 127.059 56.6772 126.842 56.2225C126.49 55.4852 126.119 54.7479 125.752 54.0119C125.563 53.6359 125.385 53.2599 125.193 52.8852C124.625 51.7719 124.04 50.6598 123.437 49.5505C107.156 19.6158 82.8508 0.115852 64.1348 0.113186C60.2082 0.113186 56.5308 0.970514 53.2215 2.77051Z"
+                                      fill="url(#paint5_linear_1440_14422)"/>
+                                  <path
+                                      d="M53.2221 2.77195C34.1407 13.1493 34.6381 50.9199 54.3354 87.1346C74.0328 123.348 105.469 144.292 124.55 133.912C143.633 123.535 143.134 85.764 123.438 49.5506C107.157 19.6159 82.8528 0.115953 64.1354 0.11462C60.2101 0.11462 56.5314 0.971948 53.2221 2.77195ZM57.7848 85.2586C39.1261 50.956 37.9261 15.5733 55.1034 6.23195C72.2821 -3.11205 101.331 17.1226 119.989 51.4253C138.646 85.7293 139.846 121.111 122.669 130.453C119.834 131.995 116.673 132.732 113.29 132.732C96.1834 132.735 73.3621 113.9 57.7848 85.2586Z"
+                                      fill="url(#paint6_linear_1440_14422)"/>
+                                  <defs>
+                                      <linearGradient id="paint0_linear_1440_14422" x1="21.3345" y1="-25.8671"
+                                                      x2="104.034" y2="155.827" gradientUnits="userSpaceOnUse">
+                                          <stop stop-color="#E2FFD9"/>
+                                          <stop offset="0.428192" stop-color="#30EC11"/>
+                                          <stop offset="0.694149" stop-color="#7570C2"/>
+                                          <stop offset="1" stop-color="#380C65"/>
+                                      </linearGradient>
+                                      <radialGradient id="paint1_radial_1440_14422" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(-138.763 64.3255) rotate(-17.0563) scale(296.531)">
+                                          <stop stop-color="white"/>
+                                          <stop offset="0.327128" stop-color="white"/>
+                                          <stop offset="0.622341" stop-color="white" stop-opacity="0"/>
+                                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint2_radial_1440_14422" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(-138.764 64.3285) rotate(-17.0563) scale(296.531 296.531)">
+                                          <stop stop-color="#F9F9F9"/>
+                                          <stop offset="0.327128" stop-color="#F8F992"/>
+                                          <stop offset="0.622341" stop-color="#F8F95C"/>
+                                          <stop offset="1" stop-color="#F8F95C"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint3_radial_1440_14422" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(123.8 84.3679) rotate(-17.0563) scale(114.654)">
+                                          <stop stop-color="white"/>
+                                          <stop offset="0.327128" stop-color="white"/>
+                                          <stop offset="0.68617" stop-color="white" stop-opacity="0"/>
+                                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                      </radialGradient>
+                                      <radialGradient id="paint4_radial_1440_14422" cx="0" cy="0" r="1"
+                                                      gradientUnits="userSpaceOnUse"
+                                                      gradientTransform="translate(123.8 84.3709) rotate(-17.0563) scale(114.654 114.654)">
+                                          <stop stop-color="#F9F9F9"/>
+                                          <stop offset="0.327128" stop-color="#F8F992"/>
+                                          <stop offset="0.68617" stop-color="#F8F95C"/>
+                                          <stop offset="1" stop-color="#F8F95C"/>
+                                      </radialGradient>
+                                      <linearGradient id="paint5_linear_1440_14422" x1="65.938" y1="7.07755"
+                                                      x2="133.787" y2="129.253" gradientUnits="userSpaceOnUse">
+                                          <stop stop-color="#1E4315"/>
+                                          <stop offset="0.460106" stop-color="#2CAD17"/>
+                                          <stop offset="0.662234" stop-color="#49277D"/>
+                                          <stop offset="1" stop-color="#380C65"/>
+                                      </linearGradient>
+                                      <linearGradient id="paint6_linear_1440_14422" x1="41.4518" y1="4.98921"
+                                                      x2="136.941" y2="132.524" gradientUnits="userSpaceOnUse">
+                                          <stop stop-color="white"/>
+                                          <stop offset="0.470745" stop-color="#00EC18"/>
+                                          <stop offset="0.832447" stop-color="#6A6EC6"/>
+                                          <stop offset="1" stop-color="#9E63FF"/>
+                                      </linearGradient>
+                                  </defs>
                               </svg>
+
                               <h4 className='font-bold text-xl pt-6 pb-2'>Корпоративные порталы и CRM</h4>
                               <div
                                   className={styles.cardProse + ` text-gray-800 dark:text-gray-300 pb-2 max-w-none xl:col-span-2`}>
@@ -138,131 +413,67 @@ export default function Home() {
           <div className="space-y-2 py-20 md:space-y-5 ">
               <div
                   className="text-4xl sm:text-5xl font-black leading-8 sm:leading-10 tracking-tight text-gray-900 dark:text-gray-100 md:text-6xl md:leading-14">
-                  <span className="text-blue-500">Наша миссия</span> - помочь своим клиентам зарабаты&shy;вать больше с
-                  помощью <span className="text-violet-700">digital-решений.</span>
+                  <span className="text-[#9E63FF]">Наша миссия</span> - помочь своим клиентам зарабаты&shy;вать больше с
+                  помощью <span className="text-[#FB3BA9]">digital-решений.</span>
               </div>
           </div>
 
           <div className="space-y-2 py-20 md:space-y-5">
               <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100">
-                  Как мы работаем
+                  С кем мы работаем
               </h2>
-              <ul className="timeline pt-4 timeline-snap-icon max-md:timeline-compact timeline-vertical ">
-                  <li>
-                      <div className="hover:scale-105 transition duration-300 timeline-start timeline-box bg-gray-100 dark:bg-gray-900 border-0">
-                          <div className={styles.workCard + ' items-center sm:max-w-md max-w-xl p-4 '}>
-                              <h4 className="font-black">
-                                  01 — Аналитика и аудит
-                              </h4>
-                              <p className='max-w-none pb-2 pt-2 text-sm dark:prose-invert xl:col-span-2'>
-                                  Мы начинаем с изучения вашего бренда, рынка и аудитории. Мы проверяем ваш
-                                  существующий
-                                  цифровой опыт и разрабатываем четкую дорожную карту для достижения ваших целей.
-                              </p>
-                          </div>
-                      </div>
-                      <div className="timeline-middle">
-                          <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="text-primary h-5 w-5">
-                              <path
-                                  fillRule="evenodd"
-                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                  clipRule="evenodd"/>
-                          </svg>
-                      </div>
-                      <hr/>
-                  </li>
-                  <li>
-                      <hr/>
-                      <div className="hover:scale-105 transition duration-300 timeline-end timeline-box bg-gray-100 dark:bg-gray-900 border-0">
-                          <div className={styles.workCard + ' items-center sm:max-w-md max-w-xl p-4'}>
-                              <h4 className="font-black">
-                                  02 — Проектирование и модель
-                              </h4>
-                              <p className='max-w-none pb-2 pt-2 text-sm dark:prose-invert xl:col-span-2'>
-                                  Мы уделяем особое внимание дизайну вашего сайта и пользовательскому опыту, изучая
-                                  запоминающиеся способы продемонстрировать ваш бренд и продукты, при этом делая
-                                  большую
-                                  ставку на удобстве использования.
-                              </p>
-                          </div>
-                      </div>
-                      <div className="timeline-middle">
-                          <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="text-primary h-5 w-5">
-                              <path
-                                  fillRule="evenodd"
-                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                  clipRule="evenodd"/>
-                          </svg>
-                      </div>
-                      <hr/>
-                  </li>
-                  <li>
-                      <hr/>
-                      <div className="hover:scale-105 transition duration-300 timeline-start timeline-box bg-gray-100 dark:bg-gray-900 border-0">
-                          <div className={styles.workCard + ' items-center sm:max-w-md max-w-xl p-4'}>
-                              <h4 className="font-black">
-                                  03 — Разработка и внедрение
-                              </h4>
-                              <p className='max-w-none pb-2 pt-2 text-sm dark:prose-invert xl:col-span-2'>
-                                  Мы превращаем проекты в код и реализуем функции и интеграции для достижения
-                                  необходимой
-                                  функциональности. Мы тщательно тестируем, чтобы гарантировать качество.
-                              </p>
-                          </div>
-                      </div>
-                      <div className="timeline-middle">
-                          <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="text-primary h-5 w-5">
-                              <path
-                                  fillRule="evenodd"
-                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                  clipRule="evenodd"/>
-                          </svg>
-                      </div>
-                      <hr/>
-                  </li>
-                  <li>
-                      <hr/>
-                      <div className="hover:scale-105 transition duration-300 timeline-end timeline-box bg-gray-100 dark:bg-gray-900 border-0">
-                          <div className={styles.workCard + ' items-center sm:max-w-md max-w-xl p-4'}>
-                              <h4 className="font-black">
-                                  04 — Развертывание и оптимизация
-                              </h4>
-                              <p className='max-w-none pb-2 pt-2 text-sm dark:prose-invert xl:col-span-2'>
-                                  Мы составляем наш контрольный список перед запуском, который включает в себя
-                                  соображения по
-                                  доступности, SEO и отслеживанию аналитики. Затем мы предлагаем поддержку после
-                                  запуска.
-                              </p>
-                          </div>
-                      </div>
-                      <div className="timeline-middle">
-                          <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              className="text-primary h-5 w-5">
-                              <path
-                                  fillRule="evenodd"
-                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                  clipRule="evenodd"/>
-                          </svg>
-                      </div>
-                      <hr/>
-                  </li>
-              </ul>
+              <div className="grid md:grid-cols-3 gap-4">
+                  <div
+                      className={styles.card + ` [&_span]:hover:bg-[#00EC18] [&_span]:hover:!border-black [&_span]:hover:!text-white hover:scale-105 flex flex-col justify-between transition duration-300 bg-gray-100 dark:bg-gray-900 !p-8`}>
+                      <div>
 
+                          <h4 className='font-bold text-2xl pt-2 pb-2'>Коммерческий сектор</h4>
+                          <div
+                              className={` text-lg leading-5 text-gray-800 dark:text-gray-300 pb-2 max-w-none xl:col-span-2`}>
+                              Различные задачи от разработки лендинга до сложной автоматизации системы управления
+                              продажами.
+                          </div>
+                          <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                              <span className="text-lg draw-border !border-gray-500 leading-4">
+                                  Есть большой опыт работы с этим
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div
+                      className={styles.card + ` [&_span]:hover:bg-[#9E63FF] [&_span]:hover:!border-black [&_span]:hover:!text-white hover:scale-105 flex flex-col justify-between transition duration-300 bg-gray-100 dark:bg-gray-900 !p-8`}>
+                      <div>
+
+                          <h4 className='font-bold text-2xl pt-2 pb-2'>Государственный сектор</h4>
+                          <div
+                              className={` text-lg leading-5 text-gray-800 dark:text-gray-300 pb-2 max-w-none xl:col-span-2`}>
+                              Мы имеем опыт работы с нормативно-правовыми документами, определяющих примене IT в гос.
+                              учреждениях.
+                          </div>
+                          <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                              <span className="text-lg draw-border !border-gray-500 leading-4">
+                                  Участвуем в закупках по 44 и 223-ФЗ
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div
+                      className={styles.card + ` [&_span]:hover:bg-[#FB3BA9] [&_span]:hover:!border-black [&_span]:hover:!text-white hover:scale-105 flex flex-col justify-between transition duration-300 bg-gray-100 dark:bg-gray-900 !p-8`}>
+                      <div>
+
+                          <h4 className='font-bold text-2xl pt-2 pb-2'>Корпоративный сектор</h4>
+                          <div
+                              className={` text-lg leading-5 text-gray-800 dark:text-gray-300 pb-2 max-w-none xl:col-span-2`}>
+                              CRM-системы, корпоративные порталы, LMS и инструменты для аналитики больших объемов. Умеем работать согласно стилю компании.
+                          </div>
+                          <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                              <span className="text-lg draw-border !border-gray-500 leading-4">
+                                  Работем без лишних вопросов
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
           <div className="space-y-5 mb-12 py-20 md:space-y-5 grid">
               <CallBlock/>

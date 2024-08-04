@@ -44,7 +44,7 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed left-0 top-0 z-10 h-full w-full transform bg-white duration-300 ease-in-out dark:bg-gray-950 dark:opacity-[0.98] ${
+        className={`fixed left-0 top-0 z-20 h-full w-full transform bg-white duration-300 ease-in-out dark:bg-gray-950 dark:opacity-[0.98] ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -64,10 +64,10 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className={styles.scrollNav + " fixed mt-8"}>
+        <nav className={styles.scrollNav + " w-full pr-8 fixed mt-8"}>
 
           {headerNavLinks.map((link) => (
-              <div key={link.title} className="px-12 py-4">
+              <div key={link.title} className="hover:scale-105 transition duration-300 px-4 w-full py-2 border-t border-black dark:border-white">
                 <Link
                     href={link.href}
                     className="hover:scale-105 transition duration-300 text-2xl font-bold text-gray-900 dark:text-gray-100"
@@ -79,7 +79,7 @@ const MobileNav = () => {
           ))}
           <Disclosure>
             <DisclosureButton
-                className="hover:scale-105 transition duration-300 group flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-12 py-4">
+                className="border-y border-black dark:border-white hover:scale-105 transition duration-300 group flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-4 py-2">
               Решения
               <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')}/>
             </DisclosureButton>
@@ -100,49 +100,49 @@ const MobileNav = () => {
               </DisclosurePanel>
             </Transition>
           </Disclosure>
-          <Disclosure>
-            <DisclosureButton
-                className="hover:scale-105 transition duration-300 flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-12 py-4">
-              Услуги
-              <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')}/>
-            </DisclosureButton>
-            <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-            >
-              <DisclosurePanel className={"px-12 grid"}>
+          {/*<Disclosure>*/}
+          {/*  <DisclosureButton*/}
+          {/*      className="hover:scale-105 transition duration-300 flex w-full items-center gap-1 text-2xl font-bold text-gray-900 dark:text-gray-100 px-4 py-2 border-y border-black">*/}
+          {/*    Услуги*/}
+          {/*    <ChevronDownIcon className={clsx('size-5 group-data-[open]:rotate-180')}/>*/}
+          {/*  </DisclosureButton>*/}
+          {/*  <Transition*/}
+          {/*      as={Fragment}*/}
+          {/*      enter="transition ease-out duration-100"*/}
+          {/*      enterFrom="transform opacity-0 scale-95"*/}
+          {/*      enterTo="transform opacity-100 scale-100"*/}
+          {/*      leave="transition ease-in duration-75"*/}
+          {/*      leaveFrom="transform opacity-100 scale-100"*/}
+          {/*      leaveTo="transform opacity-0 scale-95"*/}
+          {/*  >*/}
+          {/*    <DisclosurePanel className={"px-12 grid"}>*/}
 
-                <div className="space-y-2 xl:grid xl:grid-cols-4 gap-x-2 items-start">
-                  <div className="grid grid-cols-1">
-                    <label className="text-md font-semibold my-2">Внедрение</label>
-                    <Link
-                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
-                        href="/implementation/package">Пакетное</Link>
-                    <Link
-                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
-                        href="/implementation/project">Проектное</Link>
-                  </div>
-                  <div className="grid grid-cols-1">
-                    <label className="text-md font-semibold my-2">Сайты</label>
-                    <Link
-                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
-                        href="/development/corporative">Корпоративный</Link>
-                    <Link
-                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
-                        href="/development/landing">Landing page</Link>
-                    <Link
-                        className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"
-                        href="/development/ecommerce">Интернет-магазин</Link>
-                  </div>
-                </div>
-              </DisclosurePanel>
-            </Transition>
-          </Disclosure>
+          {/*      <div className="space-y-2 xl:grid xl:grid-cols-4 gap-x-2 items-start">*/}
+          {/*        <div className="grid grid-cols-1">*/}
+          {/*          <label className="text-md font-semibold my-2">Внедрение</label>*/}
+          {/*          <Link*/}
+          {/*              className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"*/}
+          {/*              href="/implementation/package">Пакетное</Link>*/}
+          {/*          <Link*/}
+          {/*              className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"*/}
+          {/*              href="/implementation/project">Проектное</Link>*/}
+          {/*        </div>*/}
+          {/*        <div className="grid grid-cols-1">*/}
+          {/*          <label className="text-md font-semibold my-2">Сайты</label>*/}
+          {/*          <Link*/}
+          {/*              className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"*/}
+          {/*              href="/development/corporative">Корпоративный</Link>*/}
+          {/*          <Link*/}
+          {/*              className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"*/}
+          {/*              href="/development/landing">Landing page</Link>*/}
+          {/*          <Link*/}
+          {/*              className="hover:scale-105 transition duration-300 mr-2 my-2 text-md"*/}
+          {/*              href="/development/ecommerce">Интернет-магазин</Link>*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    </DisclosurePanel>*/}
+          {/*  </Transition>*/}
+          {/*</Disclosure>*/}
           <div className={"py-4"}></div>
         </nav>
       </div>

@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="mb-2 flex space-x-2 text-sm">
           <div className='font-medium'>{siteMetadata.author}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
-          <div>Все права защищены</div>
+          <div className={'sm:block hidden'}>Все права защищены</div>
         </div>
         <div className="mb-3 flex space-x-4">
             <a href="mailto:rokkitstudio@gmail.com">
