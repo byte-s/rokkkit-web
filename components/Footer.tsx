@@ -27,7 +27,7 @@ export default function Footer() {
           <div
               className={styles.footLogo + ` hover:animate-jump hover:animate-once hover:animate-ease-out mb-2 text-sm`}>
               <a href={'/'} className={'inline-flex items-center'}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 74 74" fill="none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 74 74" fill="none">
                       <rect width="74" height="74" rx="37" fill="currentColor"/>
                       <path
                           d="M34.3706 19.0959L17.7127 47.5234C16.1262 50.2273 17.6114 51.8034 21.0375 51.037L37.2566 47.3932L52.9525 51.0081C56.3617 51.7889 57.8638 50.2273 56.311 47.5089L40.0582 19.1248C38.5055 16.4064 35.957 16.3919 34.3706 19.0959Z"
