@@ -12,6 +12,8 @@ import { ThemeProviders } from './theme-providers';
 import { Metadata } from 'next';
 import styles from '@/components/styles.module.css';
 import localFont from "next/font/local";
+import {Metrika} from "@/components/Metrika";
+import {Suspense} from "react";
 
 const Suisse_Intl = localFont({
   preload: true,

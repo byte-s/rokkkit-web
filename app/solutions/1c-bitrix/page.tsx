@@ -64,7 +64,7 @@ export default function Page() {
             <Image className="mb-4 w-full max-h-72 sm:max-h-80 lg:max-h-96" src={coverImage} alt={'1С-Битрикс: Управление сайтом'}/>
           </div>
         </header>
-        <div className="max-w-none py-10">
+        <div className="py-10">
           <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
             Описание
           </h2>
@@ -75,7 +75,7 @@ export default function Page() {
             Широкий функционал платформы позволит в короткие сроки запустить полноценное представительство компании в интернете — от среднего корпоративного сайта до крупного мультирегионального портала с каталогом продуктов.
           </p>
         </div>
-        <div className="max-w-7xl py-20 mx-auto ">
+        <div className="py-20 mx-auto ">
           <div className='grid md:grid-cols-4 grid-cols-2 gap-8'>
             <div className="">
               <svg className="size-16 mr-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
@@ -91,7 +91,7 @@ export default function Page() {
                     d="M10.1038 8.41848C9.82182 9.43688 8.79628 11.1936 6.84777 11.4482C5.12733 11.673 3.82246 10.922 3.48916 10.608C3.12168 10.3534 2.28416 9.53872 2.07906 9.02952C1.87395 8.52032 2.11324 7.41706 2.28416 6.96726L2.96743 4.98888C3.13423 4.49196 3.5247 3.31666 3.92501 2.91913C4.32533 2.5216 5.13581 2.5043 5.4694 2.5043H12.4749C14.2781 2.52978 18.2209 2.48822 19.0003 2.50431C19.7797 2.52039 20.2481 3.17373 20.3848 3.45379C21.5477 6.27061 22 7.88382 22 8.57124C21.8482 9.30456 21.22 10.6873 19.0003 11.2955C16.6933 11.9275 15.3854 10.6981 14.9751 10.2261M9.15522 10.2261C9.47997 10.625 10.4987 11.4279 11.9754 11.4482C13.4522 11.4686 14.7273 10.4383 15.1802 9.92062C15.3084 9.76786 15.5853 9.31467 15.8725 8.41848"
                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <h3 className="mt-4 text-2xl break-words font-black !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
+              <h3 className="mt-4 text-2xl break-words font-bold !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
                 Для интернет-магазинов
               </h3>
               <p className="hidden text-lg font-medium">
@@ -117,7 +117,7 @@ export default function Page() {
                     d="M16 6L15.9117 5.69094C15.4717 4.15089 15.2517 3.38087 14.7279 2.94043C14.2041 2.5 13.5084 2.5 12.117 2.5H11.883C10.4916 2.5 9.79587 2.5 9.2721 2.94043C8.74832 3.38087 8.52832 4.15089 8.0883 5.69094L8 6"
                     stroke="currentColor" stroke-width="1.5"/>
               </svg>
-              <h3 className="mt-4 text-2xl break-words font-black !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
+              <h3 className="mt-4 text-2xl break-words font-bold !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
                 Для бизнеса любого уровня
               </h3>
               <p className="hidden text-lg">
@@ -144,7 +144,7 @@ export default function Page() {
                     d="M18 8H19C20.4142 8 21.1213 8 21.5607 8.43934C22 8.87868 22 9.58579 22 11V19C22 20.1046 21.1046 21 20 21C18.8954 21 18 20.1046 18 19V8Z"
                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <h3 className="mt-4 text-2xl hyphens-manual font-black !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
+              <h3 className="mt-4 text-2xl hyphens-manual font-bold !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
                 Для СМИ и инфопорта&shy;лов
               </h3>
               <p className="hidden text-lg">
@@ -173,13 +173,13 @@ export default function Page() {
                 <path d="M13 6L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round"/>
               </svg>
-              <h3 className="mt-4 text-2xl break-words font-black !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
+              <h3 className="mt-4 text-2xl break-words font-bold !leading-7 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
                 Для небольших сайтов
               </h3>
             </div>
           </div>
         </div>
-        <div className="max-w-7xl py-20 mx-auto">
+        <div className="py-20 mx-auto">
           <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
             Тарифы и цены
           </h2>
@@ -258,7 +258,7 @@ export default function Page() {
                         d="M15.5 6.5L15.4227 6.14679C15.0377 4.38673 14.8452 3.50671 14.3869 3.00335C13.9286 2.5 13.3199 2.5 12.1023 2.5H11.8977C10.6801 2.5 10.0714 2.5 9.61309 3.00335C9.15478 3.50671 8.96228 4.38673 8.57727 6.14679L8.5 6.5"
                         stroke="currentColor" stroke-width="1.5"/>
                   </svg>
-                  <div className='ml-2 p-3 badge badge-success text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-0 rounded-full text-sm !bg-green-500 text-gray-50 font-bold'>
                     Популярно
                   </div>
                 </div>
@@ -336,11 +336,11 @@ export default function Page() {
 
           </div>
         </div>
-        <div className="max-w-7xl py-20 mx-auto">
+        <div className="py-20 mx-auto">
           <h2 className='text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4'>Стоимость
             разработки сайта</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Link href="/public"
+            <Link href="/development/corporative"
                   className="flex flex-col bg-gray-100 dark:bg-gray-800 p-8 rounded-xl hover:scale-105 transition duration-300">
               <div className='pt-6 pb-4 w-full'>
                 <div className='text-2xl font-bold'>
@@ -368,7 +368,7 @@ export default function Page() {
                 </div>
               </div>
             </Link>
-            <Link href="/public"
+            <Link href="/development/ecommerce"
                   className="flex flex-col bg-gray-100 dark:bg-gray-800 p-8 rounded-xl hover:scale-105 transition duration-300">
               <div className='pt-6 pb-4 w-full'>
                 <div className='text-2xl font-bold'>
@@ -396,7 +396,7 @@ export default function Page() {
                 </div>
               </div>
             </Link>
-            <Link href="/public"
+            <Link href="/development/landing"
                   className="flex flex-col bg-gray-100 dark:bg-gray-800 p-8 rounded-xl hover:scale-105 transition duration-300">
               <div className='pt-6 pb-4 w-full'>
                 <div className='text-2xl font-bold'>
@@ -426,7 +426,7 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        <div className="max-w-7xl py-20 mx-auto">
+        <div className="py-20 mx-auto">
           <h2 className='text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4'>
             Преимущества сайтов на 1С-Битрикс</h2>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
@@ -476,21 +476,21 @@ export default function Page() {
               </p>
               <div className={'flex flex-col items-center mt-4'}>
                 <div className="flex flex-col lg:flex-row gap-2 items-center mb-2">
-                  <div className='ml-2 p-3 badge badge-warning text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm bg-yellow-300 rounded-full text-gray-50 font-bold'>
                     Адаптивность
                   </div>
-                  <div className='ml-2 p-3 badge text-gray-50 badge-neutral font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm border border-gray-900 dark:border-white bg-transparent rounded-full text-gray-900 dark:text-gray-50 font-bold'>
                     SEO
                   </div>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center gap-2">
-                  <div className='ml-2 p-3 badge badge-error text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm rounded-full bg-red-500 text-gray-50 font-bold'>
                     ФЗ-54
                   </div>
-                  <div className='ml-2 p-3 badge badge-error text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm rounded-full bg-red-500 text-gray-50 font-bold'>
                     ФЗ-152
                   </div>
-                  <div className='ml-2 p-3 badge badge-success text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm rounded-full bg-green-500 text-gray-50 font-bold'>
                     Интеграции
                   </div>
                 </div>
@@ -498,8 +498,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className='xl:col-span-3 mt-5 text-2xl font-bold xl:row-span-2 pb-4 xl:pb-0'></div>
-        <CallBlock/>
+        <div className="space-y-5 mb-12 py-20 md:space-y-5 grid">
+          <CallBlock/>
+        </div>
       </>
   )
 }

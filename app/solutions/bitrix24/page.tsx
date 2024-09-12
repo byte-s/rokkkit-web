@@ -82,7 +82,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="max-w-7xl py-20 mx-auto">
+        <div className="py-20 mx-auto">
           <h2 className="text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4">
             Тарифы и цены
           </h2>
@@ -108,7 +108,8 @@ export default function Page() {
                   <div
                       className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 transform hover:scale-105 transition duration-300">
                     <div className="mb-2">
-                      <svg className='size-16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                      <svg className='size-16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                           height="24"
                            color="currentColor"
                            fill="none">
                         <path
@@ -128,7 +129,8 @@ export default function Page() {
                               stroke-linejoin="round"/>
                       </svg>
                       <h3 className="mt-2  text-lg font-semibold">Базовый</h3>
-                      <p className="hidden mt-4 text-gray-600 dark:text-gray-300">Для небольших отделов продаж и микробизнесов
+                      <p className="hidden mt-4 text-gray-600 dark:text-gray-300">Для небольших отделов продаж и
+                        микробизнесов
                         до 5 человек</p>
                     </div>
                     <div className="mb-4">
@@ -155,7 +157,8 @@ export default function Page() {
                   <div
                       className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 transform hover:scale-105 transition duration-300">
                     <div className="mb-2">
-                      <svg className='size-16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor"
+                      <svg className='size-16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                           height="24" color="currentColor"
                            fill="none">
                         <path d="M13 2L2 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
@@ -176,7 +179,8 @@ export default function Page() {
                               stroke-linejoin="round"/>
                       </svg>
                       <h3 className="mt-2 text-lg font-semibold">Стандартный</h3>
-                      <p className="hidden mt-4 text-gray-600 dark:text-gray-300">Для больших отделов продаж и рабочих групп до
+                      <p className="hidden mt-4 text-gray-600 dark:text-gray-300">Для больших отделов продаж и рабочих
+                        групп до
                         50 человек</p>
                     </div>
                     <div className="mb-4">
@@ -188,7 +192,7 @@ export default function Page() {
                       Все, что в Базовом +
                     </div>
                     <ul className="pl-4 !list-disc  space-y-4 text-base font-medium">
-                      <li >
+                      <li>
                         <span>50 пользвателей</span>
                       </li>
                       <li className="">
@@ -221,7 +225,7 @@ export default function Page() {
                               d="M18 8H14V22H18C19.8856 22 20.8284 22 21.4142 21.4142C22 20.8284 22 19.8856 22 18V12C22 10.1144 22 9.17157 21.4142 8.58579C20.8284 8 19.8856 8 18 8Z"
                               stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
-                        <div className='ml-2 p-3 badge badge-success text-gray-50 font-bold'>
+                        <div className='ml-2 px-2 py-0 rounded-full text-sm !bg-green-500 text-gray-50 font-bold'>
                           Популярно
                         </div>
                       </div>
@@ -310,7 +314,8 @@ export default function Page() {
                   <div
                       className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300">
                     <div className="mb-2">
-                      <svg className='size-16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor"
+                      <svg className='size-16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                           height="24" color="currentColor"
                            fill="none">
                         <path
                             d="M7 9L11.7707 4.73514C13.0647 3.57838 13.7117 3 14.5 3C15.2883 3 15.9353 3.57838 17.2293 4.73514L22 9"
@@ -370,7 +375,7 @@ export default function Page() {
                           <path d="M8.5 14H5.5M8.5 10H5.5M8.5 6H5.5" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round"/>
                         </svg>
-                        <div className='ml-2 p-3 badge badge-success text-gray-50 font-bold'>
+                        <div className='ml-2 px-2 py-0 rounded-full text-sm !bg-green-500 text-gray-50 font-bold'>
                           Популярно
                         </div>
                       </div>
@@ -393,7 +398,7 @@ export default function Page() {
                         <span>Active Directory + NTLM</span>
                       </li>
                       <li>
-                      <span>Зарплатные листки и отпуска</span>
+                        <span>Зарплатные листки и отпуска</span>
                       </li>
                     </ul>
                   </div>
@@ -446,13 +451,14 @@ export default function Page() {
             </TabPanels>
           </TabGroup>
         </div>
-        <div className="max-w-7xl py-20 mx-auto">
+        <div className="py-20 mx-auto">
           <h2 className='text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4'>Стоимость
             внедрения Битрикс24</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link href="/implementation/package"
                   className="flex flex-col bg-gray-100 dark:bg-gray-800 p-8 rounded-xl hover:scale-105 transition duration-300">
-              <svg className='size-14' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor"
+              <svg className='size-14' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                   color="currentColor"
                    fill="none">
                 <path
                     d="M12 22C11.1818 22 10.4002 21.6698 8.83693 21.0095C4.94564 19.3657 3 18.5438 3 17.1613C3 16.7742 3 10.0645 3 7M12 22C12.8182 22 13.5998 21.6698 15.1631 21.0095C19.0544 19.3657 21 18.5438 21 17.1613V7M12 22L12 11.3548"
@@ -491,8 +497,10 @@ export default function Page() {
                 </div>
               </div>
             </Link>
-            <Link href="/implementation/project" className="flex flex-col bg-gray-100 dark:bg-gray-800 p-8 rounded-xl hover:scale-105 transition duration-300">
-              <svg className='size-14' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor"
+            <Link href="/implementation/project"
+                  className="flex flex-col bg-gray-100 dark:bg-gray-800 p-8 rounded-xl hover:scale-105 transition duration-300">
+              <svg className='size-14' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                   color="currentColor"
                    fill="none">
                 <path
                     d="M12.828 6.00096C12.9388 5.68791 12.999 5.35099 12.999 5C12.999 3.34315 11.6559 2 9.99904 2C8.34219 2 6.99904 3.34315 6.99904 5C6.99904 5.35099 7.05932 5.68791 7.17008 6.00096C4.88532 6.0093 3.66601 6.09039 2.87772 6.87868C2.08951 7.66689 2.00836 8.88603 2 11.1704C2.31251 11.06 2.64876 11 2.99904 11C4.6559 11 5.99904 12.3431 5.99904 14C5.99904 15.6569 4.6559 17 2.99904 17C2.64876 17 2.31251 16.94 2 16.8296C2.00836 19.114 2.08951 20.3331 2.87772 21.1213C3.66593 21.9095 4.88508 21.9907 7.16941 21.999C7.05908 21.6865 6.99904 21.3503 6.99904 21C6.99904 19.3431 8.34219 18 9.99904 18C11.6559 18 12.999 19.3431 12.999 21C12.999 21.3503 12.939 21.6865 12.8287 21.999C15.113 21.9907 16.3322 21.9095 17.1204 21.1213C17.9086 20.333 17.9897 19.1137 17.9981 16.829C18.3111 16.9397 18.648 17 18.999 17C20.6559 17 21.999 15.6569 21.999 14C21.999 12.3431 20.6559 11 18.999 11C18.648 11 18.3111 11.0603 17.9981 11.171C17.9897 8.88627 17.9086 7.66697 17.1204 6.87868C16.3321 6.09039 15.1128 6.0093 12.828 6.00096Z"
@@ -527,7 +535,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="max-w-7xl py-20 mx-auto">
+        <div className="py-20 mx-auto">
           <h2 className='text-3xl md:text-4xl font-black leading-9 tracking-tight text-gray-900 dark:text-gray-100 mb-4'>
             Преимущества Битрикс24 перед другими системами</h2>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
@@ -563,7 +571,8 @@ export default function Page() {
             </div>
             <div
                 className="hover:scale-105 transition duration-300 col-span-2 bg-gray-100 dark:bg-gray-900 rounded-xl p-8 lg:p-10 items-center justify-center flex flex-col">
-              <svg className="lg:!w-80 w-56" xmlns="http://www.w3.org/2000/svg" width="344" height="61" viewBox="0 0 344 61" fill="none">
+              <svg className="lg:!w-80 w-56" xmlns="http://www.w3.org/2000/svg" width="344" height="61"
+                   viewBox="0 0 344 61" fill="none">
                 <path
                     d="M233.744 44.8082H264.792V37.9282H244.328C247.151 26.6379 264.439 24.1682 264.439 11.6431C264.439 4.93949 259.852 0 250.15 0C244.152 0 238.86 1.7641 235.331 3.52821L237.448 9.87897C240.624 8.29128 244.328 6.88 248.915 6.88C252.443 6.88 255.795 8.46769 255.795 12.5251C255.795 21.6985 235.508 22.4041 233.744 44.8082ZM265.674 33.8708H285.608V44.8082H293.547V33.8708H300.25V27.1672H293.547V0H287.725L265.674 28.5785V33.8708ZM274.671 27.52L285.961 12.3487C285.961 13.5836 285.608 17.4646 285.608 20.9928V27.3436H280.316C278.728 27.3436 275.729 27.52 274.671 27.52Z"
                     fill="#005893"/>
@@ -582,21 +591,21 @@ export default function Page() {
               </p>
               <div className={'flex flex-col items-center mt-4'}>
                 <div className="flex flex-col md:flex-row gap-2 items-center mb-2">
-                  <div className='ml-2 p-3 badge badge-warning text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm bg-yellow-300 rounded-full text-gray-50 font-bold'>
                     CRM
                   </div>
-                  <div className='ml-2 p-3 badge text-gray-50 badge-neutral font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm border border-gray-900 dark:border-white bg-transparent rounded-full text-gray-900 dark:text-gray-50 font-bold'>
                     Аналитика
                   </div>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center gap-2">
-                  <div className='ml-2 p-3 badge badge-error text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm rounded-full bg-red-500 text-gray-50 font-bold'>
                     Задачи
                   </div>
-                  <div className='ml-2 p-3 badge badge-error text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm rounded-full bg-red-500 text-gray-50 font-bold'>
                     Проекты
                   </div>
-                  <div className='ml-2 p-3 badge badge-success text-gray-50 font-bold'>
+                  <div className='ml-2 px-2 py-1 text-sm rounded-full bg-green-500 text-gray-50 font-bold'>
                     Интеграции
                   </div>
                 </div>
@@ -604,7 +613,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <CallBlock/>
+        <div className="space-y-5 mb-12 py-20 md:space-y-5 grid">
+          <CallBlock/>
+        </div>
       </>
   )
 }
